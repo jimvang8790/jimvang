@@ -1,9 +1,8 @@
 var myApp = angular.module('myApp', ['ngRoute']);
 // Angular configuration (routes)
 myApp.config(function($routeProvider, $locationProvider) {
-  $routeProvider.when('#main-section', {
-    template: '',
-    controller: ''
+  $routeProvider.when('/', {
+    template: 'views/index.html'
   }).when('/agentave', {
     templateUrl: 'views/agentave.html',
     controller: 'AgentController as ac'

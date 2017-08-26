@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en" class="no-js" ng-app="myApp">
   <head>
     <meta charset="utf-8">
     <title>Jim Vang | Web Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <link rel="icon" href="images/mind.png" type="image/png">
+    <!-- Angular -->
+    <script src="vendors/js/angular.min.js" charset="utf-8"></script>
+    <script src="vendors/js/angular-route.min.js" charset="utf-8"></script>
+    <script src="scripts/client.js" charset="utf-8"></script>
+    <!-- CSS -->
     <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendors/css/animate.css">
     <link rel="stylesheet" href="styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <base href="/">
   </head>
-  <body ng-app="myApp">
+  <body>
     <header>
       <nav class="nav navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
@@ -222,7 +227,7 @@
                 <div class="card">
                   <div class="hover01">
                     <figure>
-                      <a href="https://www.myagentave.com/product/" target="_blank"><img class="card-img-top" src="images/agentave.jpg" alt="Image of Agent Ave"></a>
+                      <a href="/agentave"><img class="card-img-top" src="images/agentave.jpg" alt="Image of Agent Ave"></a>
                     </figure>
                   </div>
                 </div>
@@ -232,7 +237,7 @@
                 <div class="card">
                   <div class="hover01">
                     <figure>
-                      <a href="http://bouncetribe.com/" target="_blank"><img class="card-img-top" src="images/bouncetribe.jpg" alt="Image of BounceTribe"></a>
+                      <a href="/bouncetribe"><img class="card-img-top" src="images/bouncetribe.jpg" alt="Image of BounceTribe"></a>
                     </figure>
                   </div>
                 </div>
@@ -242,7 +247,7 @@
                 <div class="card">
                   <div class="hover01">
                     <figure>
-                      <a href="https://www.achievempls.org/stepupachieve" target="_blank"><img class="card-img-top" src="images/STEP-UP.jpg" alt="Image of STEP-UP Check-In"></a>
+                      <a href="/stepup"><img class="card-img-top" src="images/STEP-UP.jpg" alt="Image of STEP-UP Check-In"></a>
                     </figure>
                   </div>
                 </div>
@@ -251,12 +256,12 @@
         </div>
         </div>
       </section> <!-- end projects -->
+      <div>
+        <ng-view>
+          <!-- Where each html will swap out -->
+        </ng-view>
+      </div>
     </div> <!-- end wrapper -->
-    <div>
-      <ng-view>
-        <!-- Where each html will swap out -->
-      </ng-view>
-    </div>
     <footer>
       <div class="container text-center">
         <div class="row">
@@ -290,10 +295,6 @@
     <script src="vendors/js/bootstrap.min.js"></script>
     <script src="vendors/js/slick.min.js"></script>
     <script src="vendors/js/waypoints.min.js"></script>
-    <script src="vendors/js/scripts.js"></script>
-    <!-- <script src="vendors/angular.min.js" charset="utf-8"></script> -->
-    <!-- <script src="vendors/angular-route.min.js" charset="utf-8"></script> -->
-    <!-- <script src="scripts/client.js" charset="utf-8"></script> -->
-    <!-- <link rel="stylesheet" href="vendors/angular-material.min.css"> -->
+    <script src="scripts/scripts.js"></script>
   </body>
 </html>
