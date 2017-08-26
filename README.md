@@ -7,5 +7,5 @@ Authors
 =======
 
 Jim Vang
- 
-Portfolio Hosted at: https://jimvangportfolio.herokuapp.com/
+
+Portfolio Hosted at: https://jimvang.herokuapp.com/
