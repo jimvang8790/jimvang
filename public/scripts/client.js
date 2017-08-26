@@ -1,18 +1,18 @@
 var myApp = angular.module('myApp', ['ngRoute']);
 // Angular configuration (routes)
 myApp.config(function($routeProvider, $locationProvider) {
-  $routeProvider.when('/', {
-    template: '<div class="home"><h1>Jim Vang</h1><h3>Prime Digital Academy | Full-Stack Software Engineer</h3><h3>University of Minnesota | Chemistry</h3><img class="link" src="images/jimvang.jpg"></div>',
+  $routeProvider.when('#main-section', {
+    template: '',
     controller: ''
-  }).when('/about', {
-    templateUrl: 'views/about.html',
-    controller: 'AboutController as ac'
-  }).when('/profile', {
-    templateUrl: 'views/projects.html',
-    controller: 'ProfileController as pc'
-  }).when('/contact', {
-    templateUrl: 'views/contact.html',
-    controller: 'ContactController as cc'
+  }).when('/agentave', {
+    templateUrl: 'views/agentave.html',
+    controller: 'AgentController as ac'
+  }).when('/bouncetribe', {
+    templateUrl: 'views/bouncetribe.html',
+    controller: 'BounceController as bc'
+  }).when('/stepup', {
+    templateUrl: 'views/stepup.html',
+    controller: 'StepController as sc'
   }).otherwise('/');
   $locationProvider.html5Mode(true);
 });// end config

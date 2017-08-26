@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en" class="no-js" ng-app="myApp">
   <head>
     <meta charset="utf-8">
     <title>Jim Vang | Web Developer</title>
@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="vendors/css/animate.css">
     <link rel="stylesheet" href="styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <base href="/">
   </head>
   <body>
     <header>
@@ -26,6 +27,11 @@
         </div>
       </nav>
     </header>
+    <div>
+      <ng-view>
+        <!-- Where each html will swap out -->
+      </ng-view>
+    </div>
     <div class="wrapper">
       <section id="main-section">
         <div class="overlay"></div>
@@ -114,7 +120,7 @@
                 <div class="card">
                   <div class="hover01">
                     <figure>
-                      <a href="#"><img class="card-img-top" src="images/agentave.jpg" alt="Image of Agent Ave"></a>
+                      <a href="https://www.myagentave.com/product/" target="_blank"><img class="card-img-top" src="images/agentave.jpg" alt="Image of Agent Ave"></a>
                     </figure>
                   </div>
                     <!-- <span>Agent Ave</span> -->
@@ -125,7 +131,7 @@
                 <div class="card">
                   <div class="hover01">
                     <figure>
-                      <a href="#"><img class="card-img-top" src="images/bouncetribe.jpg" alt="Image of BounceTribe"></a>
+                      <a href="http://bouncetribe.com/" target="_blank"><img class="card-img-top" src="images/bouncetribe.jpg" alt="Image of BounceTribe"></a>
                     </figure>
                   </div>
                     <!-- <span>Bounce Tribe</span> -->
@@ -136,7 +142,7 @@
                 <div class="card">
                   <div class="hover01">
                     <figure>
-                      <a href="#"><img class="card-img-top" src="images/STEP-UP.jpg" alt="Image of STEP-UP Check-In"></a>
+                      <a href="https://www.achievempls.org/stepupachieve" target="_blank"><img class="card-img-top" src="images/STEP-UP.jpg" alt="Image of STEP-UP Check-In"></a>
                     </figure>
                   </div>
                     <!-- <span>STEP-UP Check-In</span> -->
@@ -147,43 +153,43 @@
         </div>
       </section> <!-- end projects -->
     </div> <!-- end wrapper -->
-      <footer>
-        <div class="container text-center">
-          <div class="row">
-            </div>
-            <div class="col-md-4">
-              <h3>Work Details</h3>
-              <img src="images/jimvang2.jpg" alt="Photo of Jim Vang" class="profile-photo2">
-              <p>I am currently looking for programming opportunities or internships that will challenge and give me more experience to grow in this field. If you have any questions, please don't hesitate to contact me.</p>
-            </div>
-            <div class="col-md-4">
-              <h3>Connect With Me</h3>
-              <ul class="contact-info">
-                <li class="phone"><a href="tel:612-708-5347" target="_blank"><p>(612)-708-5347</p></a></li>
-                <li class="mail"><a href="mailto:vangjim15@gmail.com" target="_blank"><p>vangjim15@gmail.com</p></a></li>
-                <li class="linkedin"><a href="https://www.linkedin.com/in/jim-vang-283609133" target="_blank"><p>linkedin.com/in/jim-vang-283609133</p></a></li>
-                <li class="github"><a href="https://github.com/jimvang8790" target="_blank"><p>github.com/jimvang8790</p></a></li>
-              </ul>
-            </div>
-            <div class="col-md-4">
-              <a href="#about" class="footer-nav"><h3>About</h3></a>
-              <p class="footer-nav">Learn about Jim's background</p>
-              <a href="#experience" class="footer-nav"><h3>Experience</h3></a>
-              <p class="footer-nav">Learn about Jim's experience and skills</p>
-              <a href="#projects" class="footer-nav"><h3>Projects</h3></a>
-              <p class="footer-nav">View Jim's web development work</p>
-            </div>
+    <footer>
+      <div class="container text-center">
+        <div class="row">
           </div>
-          <p class="copy-right">&copy; 2017 Jim Vang</p>
-      </footer>
+          <div class="col-md-4">
+            <h3>Work Details</h3>
+            <img src="images/jimvang2.jpg" alt="Photo of Jim Vang" class="profile-photo2">
+            <p>I am currently looking for programming opportunities or internships that will challenge and give me more experience to grow in this field. If you have any questions, please don't hesitate to contact me.</p>
+          </div>
+          <div class="col-md-4">
+            <h3>Connect With Me</h3>
+            <ul class="contact-info">
+              <li class="phone"><a href="tel:612-708-5347" target="_blank"><p>(612)-708-5347</p></a></li>
+              <li class="mail"><a href="mailto:vangjim15@gmail.com" target="_blank"><p>vangjim15@gmail.com</p></a></li>
+              <li class="linkedin"><a href="https://www.linkedin.com/in/jim-vang-283609133" target="_blank"><p>linkedin.com/in/jim-vang-283609133</p></a></li>
+              <li class="github"><a href="https://github.com/jimvang8790" target="_blank"><p>github.com/jimvang8790</p></a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <a href="#about" class="footer-nav"><h3>About</h3></a>
+            <p class="footer-nav">Learn about Jim's background</p>
+            <a href="#experience" class="footer-nav"><h3>Experience</h3></a>
+            <p class="footer-nav">Learn about Jim's experience and skills</p>
+            <a href="#projects" class="footer-nav"><h3>Projects</h3></a>
+            <p class="footer-nav">View Jim's web development work</p>
+          </div>
+        </div>
+        <p class="copy-right">&copy; 2017 Jim Vang</p>
+    </footer>
     <script src="vendors/js/jquery-1.11.1.min.js"></script>
     <script src="vendors/js/bootstrap.min.js"></script>
     <script src="vendors/js/slick.min.js"></script>
     <script src="vendors/js/waypoints.min.js"></script>
     <script src="vendors/js/scripts.js"></script>
-    <!-- <script src="scripts/client.js" charset="utf-8"></script> -->
-    <!-- <link rel="stylesheet" href="vendors/angular-material.min.css"> -->
     <!-- <script src="vendors/angular.min.js" charset="utf-8"></script> -->
     <!-- <script src="vendors/angular-route.min.js" charset="utf-8"></script> -->
+    <!-- <script src="scripts/client.js" charset="utf-8"></script> -->
+    <!-- <link rel="stylesheet" href="vendors/angular-material.min.css"> -->
   </body>
 </html>
