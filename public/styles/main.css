@@ -1,0 +1,311 @@
+/**************************
+Generals
+***************************/
+
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2em;
+}
+
+h2  {
+  font-weight: bold;
+}
+
+section {
+  position: relative;
+  padding: 45px 0;
+}
+section::before,
+section::after{
+    pointer-events: none;
+    overflow: hidden;
+    display: block;
+    content: " ";
+    margin-top: -10px;
+    height: 15px;
+    visibility: hidden;
+}
+
+.divider {
+    width: 100%;
+    padding-bottom: 45px;
+}
+.divider:after {
+    content: "";
+    background: #337ab7;
+    position: relative;
+    height: 4px;
+    width: 300px;
+    display: block;
+    text-align: center;
+    margin: 13px auto;
+    -webkit-border-radius: 5em;
+    -moz-border-radius: 5em;
+    -ms-border-radius: 5em;
+    -o-border-radius: 5em;
+    border-radius: 5em;
+}
+
+.section-heading {
+  margin-top: 100px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    opacity: 0.5;
+    background: #262626;
+}
+
+/**************************
+Nav
+***************************/
+
+.nav {
+  float: left;
+  background: #fff;
+  width: 100%;
+  height: 100px;
+}
+
+.main-logo {
+  float: left;
+  margin-top: 10px;
+}
+
+.main-tab {
+  text-align: right;
+  margin-top: 30px;
+}
+
+.tabs {
+  padding: 10px 10px;
+}
+
+.hover11 figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover11 figure:hover img {
+	opacity: .5;
+}
+
+/**************************
+Main Section
+***************************/
+
+#main-section {
+    background: white url("/images/minsky.jpg") no-repeat fixed 100%;
+    position: relative;
+    height: 100%;
+    min-height: 700px;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+}
+
+#main-info {
+    position: absolute;
+    top: 175px;
+    left: 0;
+    width: 100%;
+    text-align:center;
+    color: #fff;
+}
+
+.main-header {
+  margin-bottom: 40px;
+}
+
+.h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.divider-name {
+    width: 100%;
+    padding-bottom: 5px;
+}
+.divider-name:after {
+    content: "";
+    background: #fff;
+    position: relative;
+    height: 4px;
+    width: 300px;
+    display: block;
+    text-align: center;
+    margin: 13px auto;
+    -webkit-border-radius: 5em;
+    -moz-border-radius: 5em;
+    -ms-border-radius: 5em;
+    -o-border-radius: 5em;
+    border-radius: 5em;
+}
+
+.h4 {
+  color: #fff;
+}
+
+/**************************
+About
+***************************/
+
+.profile-photo {
+  height: 40vmin;
+  width: 50vmin;
+  border-radius: 5px;
+  float: left;
+  margin: 20px 5% 30px 0;
+}
+
+.skills {
+  height: 15vmin;
+  width: 15vmin;
+  padding: 1vmin 1vmin;
+  text-align: center;
+}
+
+.row {
+  margin: 10px 10px;
+}
+
+/**************************
+Experience
+***************************/
+
+#experience {
+    background-color: #323232;
+    color: #FFF;
+}
+
+.skills-row {
+  padding-top: 15px;
+}
+
+/**************************
+Projects Page
+***************************/
+
+#projects {
+  background: white url("/images/projects.jpg") no-repeat fixed 100%;
+  position: relative;
+  height: 100%;
+  min-height: 700px;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  color: #fff;
+}
+
+.card-img-top {
+  height: 250px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.hover01 figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover01 figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.hover01 figure:hover img {
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/**************************
+Footer
+***************************/
+
+footer {
+  background: #222 !important;
+  color: #ffffff;
+  padding-top: 30px;
+}
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+  color: #ccc;
+}
+
+.profile-photo2 {
+  height: 12vmin;
+  width: 14vmin;
+  border-radius: 5px;
+  float: left;
+  margin: 10px;
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+.contact-info li.phone a {
+  background-image: url('/images/phone.png');
+}
+
+.contact-info li.mail a {
+  background-image: url('/images/gmail.png');
+}
+
+.contact-info li.linkedin a {
+  background-image: url('/images/linkedin.png');
+}
+
+.contact-info li.github a {
+  background-image: url('/images/github.png');
+}
+
+.footer-nav {
+  text-align: left;
+}
+
+.copy-right {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
