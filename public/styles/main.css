@@ -218,10 +218,22 @@ About
 Experience
 ***************************/
 
-#experience {
-  /*background-color: #323232;*/
+/*#experience {
   background-color: #222;
   color: #FFF;
+}*/
+
+#experience {
+  background: white url("/images/greyback.jpg") no-repeat fixed 100%;
+  position: relative;
+  height: 100%;
+  min-height: 700px;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  color: #fff;
 }
 
 .skills-row {
@@ -308,7 +320,7 @@ figure:hover+span {
 }
 
 /**************************
-Projects Page
+Projects
 ***************************/
 
 #projects {
