@@ -327,23 +327,22 @@ Projects Page
 .card-img-top {
   height: 250px;
   width: 300px;
-  border-radius: 25px;
-  padding-top: 10px;
-  margin-top: 20px;
+  border-radius: 10px;
+  margin-top: 40px;
 }
 
-.hover01 figure img {
+/*.hover01 figure main {
 	-webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
-.hover01 figure:hover img {
+.hover01 figure:hover main {
 	-webkit-transform: scale(1.3);
 	transform: scale(1.3);
 }
 
-.hover01 figure:hover img {
+.hover01 figure:hover main {
 	opacity: 1;
 	-webkit-animation: flash 1.5s;
 	animation: flash 1.5s;
@@ -363,6 +362,91 @@ Projects Page
 	100% {
 		opacity: 1;
 	}
+}*/
+
+main {
+  padding: 10px 0;
+  color: #fff;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+}
+
+input {
+  display: none;
+  visibility: hidden;
+}
+label {
+  display: block;
+  padding: 0.5em;
+  text-align: center;
+  border-bottom: 1px solid #CCC;
+  color: #666;
+}
+label:hover {
+  color: #000;
+}
+label::before {
+  font-family: Consolas, monaco, monospace;
+  font-weight: bold;
+  font-size: 15px;
+  content: "+";
+  vertical-align: text-top;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  background: radial-gradient(ellipse at center, #CCC 50%, transparent 50%);
+}
+
+.section {
+  padding: 0 20px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.projecth3 {
+  text-decoration: underline;
+}
+
+/* First Project */
+#expand {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+#toggle:checked ~ #expand {
+  height: 260px;
+}
+#toggle:checked ~ label::before {
+  content: "-";
+}
+
+/* Second Project */
+#expand2 {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+#toggle2:checked ~ #expand2 {
+  height: 260px;
+}
+#toggle2:checked ~ label::before {
+  content: "-";
+}
+
+/* Third Project */
+#expand3 {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+#toggle3:checked ~ #expand3 {
+  height: 260px;
+}
+#toggle3:checked ~ label::before {
+  content: "-";
 }
 
 /**************************
