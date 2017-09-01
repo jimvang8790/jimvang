@@ -344,7 +344,7 @@ Projects
   margin-top: 40px;
 }
 
-/*.hover01 figure main {
+.hover01 figure main {
 	-webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
@@ -355,7 +355,8 @@ Projects
 	transform: scale(1.3);
 }
 
-.hover01 figure:hover main {
+/* Shine */
+/*.hover01 figure:hover main {
 	opacity: 1;
 	-webkit-animation: flash 1.5s;
 	animation: flash 1.5s;
@@ -377,10 +378,10 @@ Projects
 	}
 }*/
 
-main {
+/*main {
   padding: 10px 0;
-  /*color: #fff;
-  box-shadow: 0 3px 5px rgba(0,0,0,0.3);*/
+  color: #fff;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.3);
 }
 
 input {
@@ -420,7 +421,7 @@ label::before {
   text-decoration: underline;
 }
 
-/* First Project */
+ First Project
 #expand {
   height: 0px;
   overflow: hidden;
@@ -434,7 +435,7 @@ label::before {
   content: "-";
 }
 
-/* Second Project */
+ Second Project
 #expand2 {
   height: 0px;
   overflow: hidden;
@@ -448,7 +449,7 @@ label::before {
   content: "-";
 }
 
-/* Third Project */
+ Third Project
 #expand3 {
   height: 0px;
   overflow: hidden;
@@ -460,6 +461,26 @@ label::before {
 }
 #toggle3:checked ~ label::before {
   content: "-";
+}*/
+
+/* Work */
+
+#work {
+  background: white url('/images/projects.jpg') no-repeat fixed;
+  background-size: cover ;
+  position: relative;
+  height: 100%;
+  color: #fff;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position: center center;
+}
+
+.work-heading {
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
 
 /**************************
