@@ -483,6 +483,15 @@ label::before {
   margin-bottom: 20px;
 }
 
+.work-container {
+  max-width: 900px;
+}
+
+.stepup2 {
+  width: 800px;
+  height: 550px;
+}
+
 /**************************
 Footer
 ***************************/
