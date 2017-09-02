@@ -488,8 +488,13 @@ label::before {
 }
 
 .stepup2 {
-  width: 800px;
+  width: 700px;
   height: 550px;
+}
+
+.iphone {
+  width: 325px;
+  height: 600px;
 }
 
 /**************************
