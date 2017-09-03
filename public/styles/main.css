@@ -487,6 +487,10 @@ label::before {
   max-width: 900px;
 }
 
+.work-header {
+  font-weight: bold;
+}
+
 /*.stepup2 {
   max-width: 700px;
   height: 550px;
