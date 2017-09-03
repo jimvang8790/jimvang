@@ -561,7 +561,6 @@ footer {
     width: 100%;
     display: none;
     overflow: hidden;
-    /*padding: 50px;*/
     -webkit-transition: all 2s ease;
     -moz-transition: all 2s ease;
     -ms-transition: all 2s ease;
@@ -571,7 +570,6 @@ footer {
 
 .slide.active {
     display: block;
-    /*opacity: 1;*/
 }
 
 .hobby-header {
