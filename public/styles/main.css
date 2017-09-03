@@ -554,3 +554,32 @@ footer {
   padding-top: 40px;
   padding-bottom: 20px;
 }
+
+/* Hobbies */
+
+.slide {
+    width: 100%;
+    display: none;
+    overflow: hidden;
+    /*padding: 50px;*/
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.slide.active {
+    display: block;
+    /*opacity: 1;*/
+}
+
+.hobby-header {
+  font-weight: lighter;
+}
+
+.hobby {
+    color: #1e90ff;
+    font-weight: bold;
+    font-size: 50px;
+}
