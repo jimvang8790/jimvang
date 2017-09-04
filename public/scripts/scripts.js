@@ -210,18 +210,4 @@ $(document).ready(function() {
             html.push('</a>');
         }
     }
-
-    // Hobbies
-    var n = 0;
-    $('.slide').eq(n).addClass('active fadeInDown animated');
-    setInterval(function () {
-        n++;
-        if (n === 4) {
-            n = 0;
-        }
-        $('.slide').each(function (n) {
-            $('.slide').eq(n).removeClass('active fadeInRight animated');
-        });
-        $('.slide').eq(n).addClass('active fadeInDown animated');
-    }, 2700);
 });

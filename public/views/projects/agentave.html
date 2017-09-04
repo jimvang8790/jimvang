@@ -27,7 +27,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
                 <a href="/#about" class="tabs">About</a>
-                <a href="/#experience" class="tabs">Skills</a>
+                <a href="/#skills" class="tabs">Skills</a>
                 <a href="/#projects" class="tabs">Projects</a>
               </ul>
             </div>
@@ -83,14 +83,19 @@
         </div> <!-- end main work-container -->
       </section>
     </div> <!-- end wrapper -->
-    <footer>
-      <div class="container text-center">
+    <footer id="footer">
+      <div class="container text-center foot-content">
         <div class="row">
-          </div>
           <div class="col-md-4">
             <h3>Work Details</h3>
-            <img src="/images/jimvang2.jpg" alt="Photo of Jim Vang" class="profile-photo2">
-            <p>I am currently looking for programming opportunities that will challenge and give me more experience to grow in this field. If you have any questions, please don't hesitate to contact me.</p>
+            <div class="row">
+              <div class="col-sm-6">
+                <img src="/images/jimvang2.jpg" alt="Photo of Jim Vang" class="profile-photo2 img-responsive">
+              </div>
+              <div class="col-sm-6">
+                <p class="footer-p">I am currently looking for programming opportunities. If you have any questions, please don't hesitate to contact me.</p>
+              </div>
+            </div>
           </div>
           <div class="col-md-4">
             <h3>Connect With Me</h3>
@@ -102,15 +107,16 @@
             </ul>
           </div>
           <div class="col-md-4">
-            <a href="#about" class="footer-nav"><h3>About</h3></a>
+            <a href="/#about" class="footer-nav"><h3>About</h3></a>
             <p class="footer-nav">Learn about Jim's background</p>
-            <a href="#experience" class="footer-nav"><h3>Skills</h3></a>
+            <a href="/#skills" class="footer-nav"><h3>Skills</h3></a>
             <p class="footer-nav">Learn all about Jim's skills</p>
-            <a href="#projects" class="footer-nav"><h3>Projects</h3></a>
+            <a href="/#projects" class="footer-nav"><h3>Projects</h3></a>
             <p class="footer-nav">View Jim's development work</p>
           </div>
         </div>
-      <p class="copy-right">&copy; 2017 Jim Vang</p>
+      </div>
+      <p class="copy-right text-center">&copy; 2017 Jim Vang</p>
     </footer>
     <script src="/vendors/js/jquery-1.11.1.min.js"></script>
     <script src="/vendors/js/bootstrap.min.js"></script>
