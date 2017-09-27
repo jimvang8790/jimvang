@@ -14,4 +14,4 @@ myApp.config(function($routeProvider, $locationProvider) {
     // controller: 'StepController as sc'
   }).otherwise('/');
   $locationProvider.html5Mode(true);
-});// end config
+}); // end config

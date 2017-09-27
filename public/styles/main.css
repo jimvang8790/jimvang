@@ -2,12 +2,12 @@
 Generals
 ***************************/
 
-body{
+body {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 2em;
 }
 
-h2  {
+h2 {
   font-weight: bold;
 }
 
@@ -15,8 +15,8 @@ section {
   position: relative;
   padding: 45px 0;
 }
-section::before,
-section::after{
+
+section::before, section::after {
   pointer-events: none;
   overflow: hidden;
   display: block;
@@ -30,6 +30,7 @@ section::after{
   width: 100%;
   padding-bottom: 25px;
 }
+
 .divider:after {
   content: "";
   background: #337ab7;
@@ -70,9 +71,9 @@ header .navbar-default {
   background: #ffffff;
   border: none;
   padding: 10px 0;
-  -webkit-box-shadow:0px 1px 1px #4d4d4d;
-  -moz-box-shadow:0px 1px 1px #4d4d4d;
-  box-shadow:0px 1px 1px #4d4d4d;
+  -webkit-box-shadow: 0px 1px 1px #4d4d4d;
+  -moz-box-shadow: 0px 1px 1px #4d4d4d;
+  box-shadow: 0px 1px 1px #4d4d4d;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
@@ -94,12 +95,13 @@ header .navbar-default {
 }
 
 .hover11 figure img {
-	opacity: 1;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
+
 .hover11 figure:hover img {
-	opacity: .5;
+  opacity: .5;
 }
 
 .material-icons {
@@ -127,11 +129,11 @@ Main Section
   position: relative;
   height: 100%;
   min-height: 700px;
-  -webkit-background-size:cover;
-  -moz-background-size:cover;
-  -o-background-size:cover;
-  background-size:cover;
-  background-position:center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
 }
 
 #main-info {
@@ -139,7 +141,7 @@ Main Section
   top: 175px;
   left: 0;
   width: 100%;
-  text-align:center;
+  text-align: center;
   color: #fff;
 }
 
@@ -153,9 +155,10 @@ Main Section
 }
 
 .divider-name {
-    width: 100%;
-    padding-bottom: 5px;
+  width: 100%;
+  padding-bottom: 5px;
 }
+
 .divider-name:after {
   content: "";
   background: #fff;
@@ -207,11 +210,11 @@ Experience
   height: 100%;
   /*min-height: 700px;*/
   min-height: 600px;
-  -webkit-background-size:cover;
-  -moz-background-size:cover;
-  -o-background-size:cover;
-  background-size:cover;
-  background-position:center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
   color: #fff;
 }
 
@@ -220,32 +223,34 @@ Experience
 }
 
 /* Blur */
+
 .hover08 figure img {
-	-webkit-filter: blur(3px);
-	filter: blur(3px);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
+
 .hover08 figure:hover img {
-	-webkit-filter: blur(0);
-	filter: blur(0);
+  -webkit-filter: blur(0);
+  filter: blur(0);
 }
 
 span {
-	bottom: -20px;
-	display: block;
-	color: #fff;
-	font-size: 18px;
-	text-decoration: none;
-	text-align: center;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-	opacity: 0;
+  bottom: -20px;
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  opacity: 0;
 }
 
 figure:hover+span {
-	bottom: -36px;
-	opacity: 1;
+  bottom: -36px;
+  opacity: 1;
 }
 
 /**************************
@@ -257,11 +262,11 @@ Projects
   position: relative;
   height: 100%;
   min-height: 700px;
-  -webkit-background-size:cover;
-  -moz-background-size:cover;
-  -o-background-size:cover;
-  background-size:cover;
-  background-position:center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
   color: #fff;
 }
 
@@ -273,28 +278,29 @@ Projects
 }
 
 .hover01 figure main {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
+
 .hover01 figure:hover main {
-	-webkit-transform: scale(1.3);
-	transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 /* Work */
 
 #work {
   background: white url('/images/projects.jpg') no-repeat fixed;
-  background-size: cover ;
+  background-size: cover;
   position: relative;
   height: 100%;
   color: #fff;
-  -webkit-background-size:cover;
-  -moz-background-size:cover;
-  -o-background-size:cover;
-  background-size:cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-position: center center;
 }
 
@@ -310,6 +316,7 @@ Projects
 .work-header {
   font-weight: bold;
 }
+
 /**************************
 Footer
 ***************************/
