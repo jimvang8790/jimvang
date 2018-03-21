@@ -17,6 +17,31 @@ Navbar
     transition: all 0.5s;
 }
 
+/* Uncomment to have logo resize in transition to smaller screen size */
+/* @media (max-width: 400px) {
+    .navbar-header {
+        position: relative;
+    }
+    .navbar img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+
+@media (max-width: 325px) {
+    .navbar-header {
+        position: relative;
+    }
+    .navbar img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+} */
+
 .navbar-inverse .navbar-nav>li>a {
     color: #000;
 }
@@ -30,6 +55,15 @@ Navbar
     padding-top: 5px;
     padding-bottom: 5px;
     opacity: 0.9;
+}
+
+/************************************************************** 
+Langing Images/Intro
+***************************************************************/
+
+.fill-screen {
+    background-size: cover;
+    background-position: center;
 }
 
 /************************************************************** 
