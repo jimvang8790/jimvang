@@ -16,6 +16,12 @@ body {
     }
 }
 
+.fill-screen {
+    background-size: cover;
+    background-position: center;
+    }
+}
+
 /************************************************************** 
 Navbar
 ***************************************************************/
@@ -127,21 +133,18 @@ header {
 }
 
 /************************************************************** 
-Langing Images/Intro
-***************************************************************/
-
-.fill-screen {
-    background-size: cover;
-    background-position: center;
-}
-
-/************************************************************** 
 About
 ***************************************************************/
 
 .content-filler {
     min-height: 350px;
 }
+
+.profile-photo {
+    box-shadow: rgba(0,0,0,0.5) 10px 10px 25px;
+}
+
+
 
 /************************************************************** 
 Skills
@@ -165,3 +168,45 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
+.profile-photo2 {
+    border-radius: 5px;
+    margin: 10px;
+  }
+
+  .contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contact-info a {
+    display: block;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+  }
+
+  .contact-info li.phone a {
+    background-image: url('/images/phone.png');
+  }
+  
+  .contact-info li.mail a {
+    background-image: url('/images/gmail.png');
+  }
+  
+  .contact-info li.linkedin a {
+    background-image: url('/images/linkedin.png');
+  }
+  
+  .contact-info li.github a {
+    background-image: url('/images/github.png');
+  }
+
+  .footer-p {
+    text-align: left;
+  }
+  
+  .footer-nav {
+    text-align: left;
+  }
