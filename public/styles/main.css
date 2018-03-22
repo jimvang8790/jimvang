@@ -3,7 +3,8 @@ General
 ***************************************************************/
 
 body {
-    padding-top: 80px;
+    padding-top: 50px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .fixed-attachment {
@@ -19,8 +20,8 @@ body {
 .fill-screen {
     background-size: cover;
     background-position: center;
-    }
 }
+
 
 /************************************************************** 
 Navbar
@@ -58,8 +59,12 @@ Navbar
     }
 } */
 
-.navbar-inverse .navbar-nav>li>a {
+.navbar-default .navbar-nav>li>a {
     color: #000;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #E4A025;
 }
 
 .navbar img {
@@ -91,13 +96,17 @@ header {
 } 
 
 .overlay-banner {
-    background: rgba(0,0,0,0);
     position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    display: flex;
+    top: 40%;
+    left: 40%;
+    margin-right: -50;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    /* top: 0; right: 0; bottom: 0; left: 0; */
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     color: white;
     z-index: 1;
 }
@@ -132,6 +141,66 @@ header {
     } 
 }
 
+.banner-text {
+    font-size: 6rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.banner-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #ffcf40;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 110px;
+}
+
+.btn-1 {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.btn-1:hover {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+}
+
+.btn-2 {
+    color: #fff;
+    background-color: #E4A025;
+    border-color: #E4A025;
+}
+
+.btn-2:hover {
+    color: #E4A025;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.down-button {
+    position: absolute;
+    bottom: 15%;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.down-button a {
+    color: #E4A025;
+}
+
+.down-button a:hover {
+    color: #fff;
+}
+
 /************************************************************** 
 About
 ***************************************************************/
@@ -143,8 +212,6 @@ About
 .profile-photo {
     box-shadow: rgba(0,0,0,0.5) 10px 10px 25px;
 }
-
-
 
 /************************************************************** 
 Skills
@@ -163,7 +230,7 @@ Footer
 ***************************************************************/
 
 footer {
-    background-color: #333;
+    background-color: #111;
     color: #ddd;
     padding: 20px;
     text-align: center;
