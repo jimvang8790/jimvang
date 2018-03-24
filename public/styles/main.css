@@ -3,7 +3,7 @@ General
 ***************************************************************/
 
 body {
-    padding-top: 50px;
+    padding-top: 80px;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -21,7 +21,6 @@ body {
     background-size: cover;
     background-position: center;
 }
-
 
 /************************************************************** 
 Navbar
@@ -61,10 +60,15 @@ Navbar
 
 .navbar-default .navbar-nav>li>a {
     color: #000;
+    font-size: 15px;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-    color: #E4A025;
+    color: #D4AF37;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: #D4AF37;
 }
 
 .navbar img {
@@ -87,7 +91,7 @@ header {
     position: relative;
     width: auto;
     height: auto;
-    padding: 425px 0;
+    padding: 375px 0;
     min-height: 100%;
     background: no-repeat center center;
     background-attachment: scroll;
@@ -97,21 +101,13 @@ header {
 
 .overlay-banner {
     position: absolute;
-    top: 40%;
-    left: 40%;
-    margin-right: -50;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    /* top: 0; right: 0; bottom: 0; left: 0; */
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
+    margin-top: -200px;
+    margin-left: 100px;
     color: white;
     z-index: 1;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     header {
         display: block;
         position: relative;
@@ -139,19 +135,19 @@ header {
         background-size: cover;
         z-index: 0;
     } 
-}
+} */
 
-.banner-text {
-    font-size: 6rem;
-    font-weight: bold;
+.banner-title h4 {
+    font-size: 2.5rem;
     margin-bottom: 1.5rem;
+    color: #D4AF37;
     text-transform: uppercase;
 }
 
-.banner-title {
-    font-size: 2.5rem;
+.banner-text h1 {
+    font-size: 6rem;
+    font-weight: bold;
     margin-bottom: 1.5rem;
-    color: #ffcf40;
     text-transform: uppercase;
 }
 
@@ -169,32 +165,32 @@ header {
 
 .btn-1:hover {
     color: #fff;
-    background-color: #000;
-    border-color: #000;
+    background-color: #444;
+    border-color: #444;
 }
 
 .btn-2 {
     color: #fff;
-    background-color: #E4A025;
-    border-color: #E4A025;
+    background-color: #D4AF37;
+    border-color: #D4AF37;
 }
 
 .btn-2:hover {
-    color: #E4A025;
+    color: #D4AF37;
     background-color: #fff;
     border-color: #fff;
 }
 
 .down-button {
     position: absolute;
-    bottom: 15%;
+    margin-top: 200px;
     width: 100%;
     text-align: center;
     z-index: 1;
 }
 
 .down-button a {
-    color: #E4A025;
+    color: #D4AF37;
 }
 
 .down-button a:hover {
