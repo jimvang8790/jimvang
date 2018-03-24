@@ -201,6 +201,13 @@ header {
 About
 ***************************************************************/
 
+#about {
+    background-image: url("../images/ivory_bkg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .content-filler {
     min-height: 350px;
 }
@@ -210,16 +217,37 @@ About
 }
 
 /************************************************************** 
+Experience
+***************************************************************/
+
+#experience {
+    background-image: url("../images/experience3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/************************************************************** 
 Skills
 ***************************************************************/
 
-/************************************************************** 
-Expreience
-***************************************************************/
+#skills {
+    background-image: url("../images/greyback.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 /************************************************************** 
 Projects
 ***************************************************************/
+
+#projects {
+    background-image: url("../images/projects.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 /************************************************************** 
 Footer 
