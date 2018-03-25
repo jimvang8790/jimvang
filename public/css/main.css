@@ -107,11 +107,11 @@ Navbar
     opacity: 1;
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
-  }
+}
   
-  .hover-logo figure:hover img {
+.hover-logo figure:hover img {
     opacity: .5;
-  }
+}
 
 /************************************************************** 
 Header
@@ -305,42 +305,41 @@ footer {
 .profile-photo2 {
     border-radius: 5px;
     margin: 10px;
-  }
+}
 
-  .contact-info {
+.contact-info {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
+}
 
-  .contact-info a {
+.contact-info a {
     display: block;
     min-height: 20px;
     background-repeat: no-repeat;
     background-size: 20px 20px;
-  }
+}
 
-  .contact-info li.phone a {
+.contact-info li.phone a {
     background-image: url('/images/footer/phone.png');
-  }
-  
-  .contact-info li.mail a {
-    background-image: url('/images/footer/gmail.png');
-  }
-  
-  .contact-info li.linkedin a {
-    background-image: url('/images/footer/linkedin.png');
-  }
-  
-  .contact-info li.github a {
-    background-image: url('/images/footer/github.png');
-  }
+}
 
-  .footer-p {
+.contact-info li.mail a {
+    background-image: url('/images/footer/gmail.png');
+}
+
+.contact-info li.linkedin a {
+    background-image: url('/images/footer/linkedin.png');
+}
+
+.contact-info li.github a {
+    background-image: url('/images/footer/github.png');
+}
+
+.footer-p {
     text-align: left;
-  }
-  
-  .footer-nav {
+}
+
+.footer-nav {
     text-align: left;
-  }
-  
+}
