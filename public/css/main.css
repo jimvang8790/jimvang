@@ -255,7 +255,7 @@ About
 }
 
 .jim {
-    height: 345px;
+    height: 330px;
     width: 345px;
     transform: translate(0%, 40%);
     z-index: 1;
@@ -266,8 +266,16 @@ About
     height: 225px;
     width: 205px;
     transform: translate(40%, 10%);
-    z-index: -1;
+    z-index: 0;
     border: 5px solid #fff;
+}
+
+.about-text {
+    padding-top: 10px;
+}
+.about-text p {
+    text-align: left;
+    font-size: 18px;
 }
 
 /************************************************************** 
