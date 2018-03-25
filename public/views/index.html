@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
   <!-- <link rel="stylesheet" href="vendors/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendors/css/animate.css">
+  <link rel="stylesheet" href="vendors/css/nanogallery.min.css">
   <link rel="stylesheet" href="vendors/css/jquery.fs.wallpaper.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -27,7 +29,7 @@
             <div class="navbar-header hover-logo">
               <figure>
                   <a href="#top">
-                    <img alt="Brand" src="images/logo_tran.png">
+                    <img alt="Brand" src="images/brand_logo.png">
                   </a>
               </figure>
             </div>
@@ -67,13 +69,19 @@
       <section id="about" class="row">
         <div class="fill-screen fixed-attachment stellar-bg" data-stellar-background-ratio="0.2">
           <div class="container">
+            <div class="wow fadeInDown">
               <h1>About</h1>
-              <div class="divider"></div>
-              <div class="row">
-                  <div class="col-md-4">
-                    
-                  </div>
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="interest">
+                    <img class="aquascaping" src="images/about/aquascaping.jpeg" alt="aquascaping">
+                    <img class="jim" src="images/about/jimvang.jpg" alt="jim vang">
+                    <img class="gaming" src="images/about/gaming.jpeg" alt="gaming">
                 </div>
+              </div>
+            </div>
           </div>
         </div>
       </section> <!-- End of about section -->
@@ -81,7 +89,9 @@
       <section id="experience" class="row">
         <div class="fill-screen fixed-attachment stellar-bg" data-stellar-background-ratio="0.2">
           <div class="container">
-            <h1>Experience</h1>
+            <div class="wow fadeInDown">
+              <h1>Experience</h1>
+            </div>
             <div class="divider"></div>
             <div class="row">
               <div class="col-md-4">
@@ -95,11 +105,40 @@
       <section id="skills" class="row">
         <div class="fill-screen fixed-attachment stellar-bg" data-stellar-background-ratio="0.2">
           <div class="container">
-            <h1>Skills</h1>
+            <div class="wow fadeInDown">
+              <h1>Skills</h1>
+            </div>
             <div class="divider"></div>
-            <div class="row">
-              <div class="col-md-4">
-                
+            <div class="skills-icons">
+              <div class="row">
+                <!-- <div id="nanoGallery">
+                    <a href="images/skills/html.png" data-ngthumb="images/skills/html.png" data-ngdesc="Description1">HTML5</a>
+                    <a href="images/skills/css.png" data-ngthumb="images/skills/css.png">CSS3</a>
+                    <a href="images/skills/js.png" data-ngthumb="images/skills/js.png">JavaScripts</a>
+                </div> -->
+                <div class="img-row-1">
+                  <div class="col-xs-4 col-md-2">
+                    <figure>  
+                      <img src="images/skills/html.png" alt="HTML5">
+                    </figure>
+                    <p>HTML5</p>
+                  </div>
+                  <div class="col-xs-4 col-md-2">
+                    <img src="images/skills/css.png" alt="CSS3">
+                  </div>
+                  <div class="col-xs-4 col-md-2">
+                    <img src="images/skills/js.png" alt="JavaScript">
+                  </div>
+                  <div class="col-xs-4 col-md-2">
+                    <img src="images/skills/Bootstrap.png" alt="Bootstrap">
+                  </div>
+                  <div class="col-xs-4 col-md-2">
+                    <img src="images/skills/sass.png" alt="SASS">
+                  </div>
+                  <div class="col-xs-4 col-md-2">
+                    <img src="images/skills/jQuery.png" alt="jQuery">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -109,7 +148,9 @@
       <section id="projects" class="row">
         <div class="fill-screen fixed-attachment stellar-bg" data-stellar-background-ratio="0.2">
           <div class="container">
-            <h1>Projects</h1>
+            <div class="wow fadeInDown">
+              <h1>Projects</h1>
+            </div>
             <div class="divider"></div>
             <div class="row">
               <div class="col-md-4">
@@ -170,7 +211,7 @@
               <div class="row">
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/jim-vang-283609133" target="_blank">
-                      <i class="fas fa-share-square fa-2x"></i>
+                      <i class="fas fa-address-book fa-2x"></i>
                     </a>
                     <a href="mailto:vangjim15@gmail.com" target="_blank">
                       <i class="fas fa-envelope fa-2x"></i>
@@ -208,6 +249,8 @@
   <script src="vendors/js/jquery.fs.wallpaper.min.js"></script>
   <script src="vendors/js/jquery.easing.js"></script>
   <script src="vendors/js/jquery.stellar.js"></script>
+  <script src="vendors/js/wow.min.js"></script>
+  <script src="vendors/js/jquery.nanogallery.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

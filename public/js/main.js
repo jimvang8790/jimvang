@@ -14,7 +14,7 @@ $(document).ready(function() {
     // smooth scrolling jquery.easing
     $('.nav a, .down-button a, .overlay-banner a, .footer-nav a').bind('click', function () {
         $('html, body').stop().animate({
-            scrollTop: $($(this).attr('href')).offset().top - 68
+            scrollTop: $($(this).attr('href')).offset().top - 60
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     }); // end smooth scrolling
@@ -29,5 +29,16 @@ $(document).ready(function() {
             mp4: "../video/Plexus_AfterEffects.mp4"
         }
     }); // end video function
+
+    // initialize WOW for element animation
+    new WOW().init();
+
+    // initialize NanoGallery
+    // $("#nanoGallery").nanoGallery({
+    //     thumbnailWidth: 'auto',
+    //     thumbnailHeight: 100,
+    //     locationHash: false,
+    //     thumbnailHoverEffect:'borderLighter,imageScaleIn80'
+    // });
 
 }); // end document.ready

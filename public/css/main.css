@@ -243,6 +243,33 @@ About
     text-align: center;
 }
 
+.interest img {
+    border-radius: 50%;
+}
+
+.aquascaping {
+    height: 225px;
+    width: 205px;
+    transform: translate(40%, -10%);
+    z-index: 0;
+}
+
+.jim {
+    height: 345px;
+    width: 345px;
+    transform: translate(0%, 40%);
+    z-index: 1;
+    border: 5px solid #fff;
+}
+
+.gaming {
+    height: 225px;
+    width: 205px;
+    transform: translate(40%, 10%);
+    z-index: -1;
+    border: 5px solid #fff;
+}
+
 /************************************************************** 
 Experience
 ***************************************************************/
@@ -273,6 +300,15 @@ Skills
 #skills h1 {
     text-align: center;
     color: #fff;
+}
+
+.skills-icons {
+    text-align: center;
+}
+
+.skills-icons img {
+    height: 80px;
+    width: 80px;
 }
 
 /************************************************************** 
@@ -319,6 +355,7 @@ footer a:hover {
 
 .footer-job {
     color: #D4AF37;
+    text-transform: uppercase;
 }
 
 .divider-footer {
