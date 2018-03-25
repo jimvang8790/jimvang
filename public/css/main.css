@@ -196,8 +196,8 @@ header {
 
 .btn-1:hover {
     color: #fff;
-    background-color: #444;
-    border-color: #444;
+    background-color: #E5E4E2;
+    border-color: #E5E4E2;
 }
 
 .btn-2 {
@@ -296,50 +296,63 @@ Footer
 ***************************************************************/
 
 footer {
-    background-color: #111;
-    color: #ddd;
-    padding: 20px;
-    text-align: center;
+    background-color: #E5E4E2;
+    padding: 20px 20px 20px 20px;
+    text-align: left;
 }
 
-.profile-photo2 {
-    border-radius: 5px;
-    margin: 10px;
+footer a {
+    color: #333;
 }
 
-.contact-info {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+footer a:hover {
+    color: #D4AF37;
 }
 
-.contact-info a {
+.footer-info {
+    margin-bottom: 20px; 
+}
+.footer-info h2,
+.footer-info p {
+    display: inline;
+}
+
+.footer-job {
+    color: #D4AF37;
+}
+
+.divider-footer {
+    width: 100%;
+    padding-top: 25px; 
+    /* padding-bottom: 10px; */
+}
+  
+.divider-footer:after {
+    content: "";
+    background: #D4AF37;
+    position: relative;
+    height: 2px;
+    width: 100%;
     display: block;
-    min-height: 20px;
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
+    text-align: center;
+    margin: 13px auto;
+    -webkit-border-radius: 5em;
+    -moz-border-radius: 5em;
+    -ms-border-radius: 5em;
+    -o-border-radius: 5em;
+    border-radius: 5em;
 }
 
-.contact-info li.phone a {
-    background-image: url('/images/footer/phone.png');
+.social-icons a {
+    padding: 15px;
 }
 
-.contact-info li.mail a {
-    background-image: url('/images/footer/gmail.png');
+.footer-banner {
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.contact-info li.linkedin a {
-    background-image: url('/images/footer/linkedin.png');
-}
-
-.contact-info li.github a {
-    background-image: url('/images/footer/github.png');
-}
-
-.footer-p {
-    text-align: left;
-}
-
-.footer-nav {
-    text-align: left;
+.footer-copy-rights {
+    text-align: center;
+    opacity: 0.5;
 }

@@ -17,5 +17,5 @@ app.get('/*', function(req, res) {
 
 // spin up server and is listening on localhost:3004
 app.listen(port, function() {
-  console.log('up 9000');
+  console.log('Server up on localhost:9000');
 });
