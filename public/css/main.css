@@ -22,6 +22,27 @@ body {
     background-position: center;
 }
 
+.divider {
+    width: 100%;
+    padding-bottom: 25px;
+}
+  
+.divider:after {
+    content: "";
+    background: #D4AF37;
+    position: relative;
+    height: 4px;
+    width: 300px;
+    display: block;
+    text-align: center;
+    margin: 13px auto;
+    -webkit-border-radius: 5em;
+    -moz-border-radius: 5em;
+    -ms-border-radius: 5em;
+    -o-border-radius: 5em;
+    border-radius: 5em;
+}
+
 /************************************************************** 
 Navbar
 ***************************************************************/
@@ -81,6 +102,16 @@ Navbar
     padding-bottom: 5px;
     opacity: 0.9;
 }
+
+.hover-logo figure img {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  
+  .hover-logo figure:hover img {
+    opacity: .5;
+  }
 
 /************************************************************** 
 Header
@@ -208,12 +239,8 @@ About
     background-size: cover;
 }
 
-.content-filler {
-    min-height: 350px;
-}
-
-.profile-photo {
-    box-shadow: rgba(0,0,0,0.5) 10px 10px 25px;
+#about h1 {
+    text-align: center;
 }
 
 /************************************************************** 
@@ -221,10 +248,15 @@ Experience
 ***************************************************************/
 
 #experience {
-    background-image: url("../images/experience3.jpg");
+    background-image: url("../images/experience.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+#experience h1 {
+    text-align: center;
+    color: #fff;
 }
 
 /************************************************************** 
@@ -238,6 +270,11 @@ Skills
     background-size: cover;
 }
 
+#skills h1 {
+    text-align: center;
+    color: #fff;
+}
+
 /************************************************************** 
 Projects
 ***************************************************************/
@@ -247,6 +284,11 @@ Projects
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+#projects h1 {
+    text-align: center;
+    color: #fff;
 }
 
 /************************************************************** 
@@ -279,19 +321,19 @@ footer {
   }
 
   .contact-info li.phone a {
-    background-image: url('/images/phone.png');
+    background-image: url('/images/footer/phone.png');
   }
   
   .contact-info li.mail a {
-    background-image: url('/images/gmail.png');
+    background-image: url('/images/footer/gmail.png');
   }
   
   .contact-info li.linkedin a {
-    background-image: url('/images/linkedin.png');
+    background-image: url('/images/footer/linkedin.png');
   }
   
   .contact-info li.github a {
-    background-image: url('/images/github.png');
+    background-image: url('/images/footer/github.png');
   }
 
   .footer-p {
@@ -301,3 +343,4 @@ footer {
   .footer-nav {
     text-align: left;
   }
+  
