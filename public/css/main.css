@@ -294,6 +294,75 @@ Experience
     color: #fff;
 }
 
+.concord-exp {
+    border: 1px solid #fff;
+    padding: 15px;
+    margin: 5px;
+    text-align: left;
+    height: 280px;
+}
+
+.concord-exp h3 {
+    color: #D4AF37;
+}
+
+.concord-exp li {
+    color: #fff;
+    padding: 5px;
+}
+
+.lci-exp {
+    border: 1px solid #fff;
+    padding: 15px;
+    margin: 5px;
+    text-align: left;
+    height: 280px;
+}
+.lci-exp h3 {
+    color: #D4AF37;
+}
+
+.lci-exp li {
+    color: #fff;
+    padding: 5px;
+}
+
+.ecolab-exp {
+    border: 1px solid #fff;
+    padding: 15px;
+    margin: 5px;
+    margin-top: 30px; 
+    text-align: left;
+    height: 280px;
+}
+
+.ecolab-exp h3 {
+    color: #D4AF37;
+}
+
+.ecolab-exp li {
+    color: #fff;
+    padding: 5px;
+}
+
+.valspar-exp {
+    border: 1px solid #fff;
+    padding: 15px;
+    margin: 5px;
+    margin-top: 30px; 
+    text-align: left;
+    height: 280px;
+}
+
+.valspar-exp h3 {
+    color: #D4AF37;
+}
+
+.valspar-exp li {
+    color: #fff;
+    padding: 5px;
+}
+
 /************************************************************** 
 Skills
 ***************************************************************/
