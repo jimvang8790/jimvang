@@ -368,7 +368,7 @@ Skills
 ***************************************************************/
 
 #skills {
-    background-image: url("../images/greyback.jpg");
+    background-image: url("../images/ivory_bkg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -376,16 +376,39 @@ Skills
 
 #skills h1 {
     text-align: center;
-    color: #fff;
+}
+
+#skills .divider {
+    padding-bottom: 80px;
 }
 
 .skills-icons {
     text-align: center;
 }
 
+.skills-row-1 h4,
+.skills-row-2 h4 {
+    padding-top: 15px;
+}
+
+.skills-row-1 p,
+.skills-row-2 p {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+    color: black;
+}
+
+.skills-row-2 {
+    padding-top: 15px;
+}
+
 .skills-icons img {
-    height: 80px;
-    width: 80px;
+    height: 90px;
+    width: 90px;
 }
 
 /************************************************************** 
@@ -438,7 +461,6 @@ footer a:hover {
 .divider-footer {
     width: 100%;
     padding-top: 25px; 
-    /* padding-bottom: 10px; */
 }
   
 .divider-footer:after {
@@ -459,6 +481,11 @@ footer a:hover {
 
 .social-icons a {
     padding: 15px;
+}
+
+.social-icons img {
+    height: 25px;
+    width: 25px;
 }
 
 .footer-banner {
