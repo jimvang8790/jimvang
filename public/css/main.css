@@ -43,7 +43,7 @@ body {
     background-attachment: fixed;
 }
 
-@media screen and (min-width: 480px) {
+/* @media screen and (min-width: 480px) {
     .fixed-attachment {
         background-attachment: scroll;
     }
@@ -54,19 +54,14 @@ body {
         background-size: cover;
         background-position: center;
     }
-}
-
-.divider {
-    width: 100%;
-    padding-bottom: 25px;
-}
+} */
   
-.divider:after {
+.divider {
     content: "";
     background: #D4AF37;
     position: relative;
     height: 4px;
-    width: 300px;
+    width: 150px;
     display: block;
     text-align: center;
     margin: 13px auto;
@@ -75,6 +70,12 @@ body {
     -ms-border-radius: 5em;
     -o-border-radius: 5em;
     border-radius: 5em;
+}
+
+@media screen and (min-width: 768px) {
+    .divider {
+        width: 300px;
+    }
 }
 
 /************************************************************** 
@@ -143,12 +144,12 @@ Masthead-Wrapper
 } 
 @media screen and (min-width: 768px) {
     #video-wallpaper {
-        height: 500px;
+        height: 600px;
     } 
 }
 @media screen and (min-width: 992px) {
     #video-wallpaper {
-        height: 600px;
+        height: 700px;
     } 
 }
 
@@ -280,11 +281,9 @@ Masthead-Wrapper
 }
 @media screen and (min-width: 992px) {
     .down-button {
-        position: absolute;
         display: block;
+        text-align: center;
         margin-top: 70px;
-        left: 50%;
-        right: 50%;
     }
 }
 
@@ -302,48 +301,141 @@ About
 
 #about {
     background-image: url("../images/ivory_bkg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+@media screen and (min-width: 768px) {
+    #about  {
+        height: 700px;
+    } 
+}
+
+@media screen and (min-width: 992px) {
+    #about  {
+        height: 720px;
+    } 
 }
 
 #about h1 {
     text-align: center;
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    #about h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #about h1 {
+        font-size: 2.4rem;
+    }
+}
+
+.interest {
+    text-align: center;
+    margin-top: 20px;
 }
 
 .interest img {
     border-radius: 50%;
 }
 
-.aquascaping {
-    height: 225px;
-    width: 205px;
-    transform: translate(40%, -10%);
-    z-index: 0;
-}
-
 .jim {
-    height: 330px;
-    width: 345px;
-    transform: translate(0%, 40%);
-    z-index: 1;
-    border: 5px solid #fff;
+    height: 150px;
+    width: 175px;
+    border: 1px solid #fff;
 }
 
+@media screen and (min-width: 768px) {
+    .jim {
+        position: absolute;
+        top: 190px;
+        left: 65px;
+        height: 245px;
+        width: 255px;
+        border: 3px solid #fff;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .jim {
+        top: 130px;
+        left: 150px;
+        height: 305px;
+        width: 315px;
+    }
+}
+
+.aquascaping,
 .gaming {
-    height: 225px;
-    width: 205px;
-    transform: translate(40%, 10%);
-    z-index: 0;
-    border: 5px solid #fff;
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .aquascaping,
+    .gaming {
+        position: absolute;
+        display: block;
+        height: 145px;
+        width: 155px;
+        z-index: 0;
+    }
+
+    .aquascaping {
+        top: 55px;
+        left: 115px;
+    }
+
+    .gaming {
+        border: 3px solid #fff;
+        top: 415px;
+        left: 115px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .aquascaping,
+    .gaming {
+        height: 195px;
+        width: 205px;
+    }
+
+    .aquascaping {
+        top: 25px;
+        left: 40px;
+    }
+
+    .gaming {
+        top: 345px;
+        left: 40px;
+    }
 }
 
 .about-text {
-    padding-top: 10px;
+    margin-top: 40px;
 }
+@media screen and (min-width: 992px) {
+    .about-text {
+        padding-top: 10px;
+    }
+}
+
 .about-text p {
     text-align: left;
-    font-size: 18px;
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .about-text p {
+        font-size: 1.3rem;
+        margin-top: 25px;
+    }
 }
 
 /************************************************************** 
