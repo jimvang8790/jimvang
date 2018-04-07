@@ -24,7 +24,6 @@ body {
         font-size: 16px;
     }
 }
-
 @media screen and (min-width: 576px) {
     html {
         font-size: 18px;
@@ -71,7 +70,6 @@ body {
     -o-border-radius: 5em;
     border-radius: 5em;
 }
-
 @media screen and (min-width: 768px) {
     .divider {
         width: 300px;
@@ -283,14 +281,13 @@ Masthead-Wrapper
     .down-button {
         display: block;
         text-align: center;
-        margin-top: 70px;
+        margin-top: 150px;
     }
 }
 
 .down-button a {
     color: #D4AF37;
 }
-
 .down-button a:hover {
     color: #fff;
 }
@@ -306,13 +303,11 @@ About
     overflow: hidden;
     z-index: 0;
 }
-
 @media screen and (min-width: 768px) {
     #about  {
         height: 700px;
     } 
 }
-
 @media screen and (min-width: 992px) {
     #about  {
         height: 720px;
@@ -323,14 +318,12 @@ About
     text-align: center;
     font-size: 1.5rem;
 }
-
 @media screen and (min-width: 768px) {
     #about h1 {
         font-size: 2.2rem;
     }
 }
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
     #about h1 {
         font-size: 2.4rem;
     }
@@ -350,7 +343,6 @@ About
     width: 175px;
     border: 1px solid #fff;
 }
-
 @media screen and (min-width: 768px) {
     .jim {
         position: absolute;
@@ -361,7 +353,6 @@ About
         border: 3px solid #fff;
     }
 }
-
 @media screen and (min-width: 992px) {
     .jim {
         top: 130px;
@@ -375,7 +366,6 @@ About
 .gaming {
     display: none;
 }
-
 @media screen and (min-width: 768px) {
     .aquascaping,
     .gaming {
@@ -397,7 +387,6 @@ About
         left: 115px;
     }
 }
-
 @media screen and (min-width: 992px) {
     .aquascaping,
     .gaming {
@@ -430,7 +419,6 @@ About
     font-size: 1.1rem;
     margin-top: 15px;
 }
-
 @media screen and (min-width: 768px) {
     .about-text p {
         font-size: 1.3rem;
@@ -444,50 +432,116 @@ Experience
 
 #experience {
     background-image: url("../images/experience.jpg");
+    position: relative;
+    background-size: auto 100%;
+    background-position: 50% 100%;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    overflow: hidden;
+    z-index: 0;
+}
+@media screen and (min-width: 1200px) {
+    #experience  {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    } 
 }
 
 #experience h1 {
     text-align: center;
+    font-size: 1.5rem;
     color: #fff;
+}
+@media screen and (min-width: 768px) {
+    #experience h1 {
+        font-size: 2.2rem;
+    }
+}
+@media screen and (min-width: 992px) {
+    #experience h1 {
+        font-size: 2.4rem;
+    }
 }
 
 .concord-exp {
     border: 1px solid #fff;
-    padding: 15px;
-    margin: 5px;
     text-align: left;
-    height: 280px;
+    margin-top: 15px;
+}
+@media screen and (min-width: 576px) {
+    .concord-exp {
+        margin-top: 30px;
+        padding-bottom: 20px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .concord-exp {
+        margin-top: 35px;
+        height: 280px;
+    }
 }
 
 .concord-exp h3 {
     color: #D4AF37;
+    font-size: 1.3rem;
+    margin-left: 20px;
+}
+@media screen and (min-width: 576px) {
+    .concord-exp h3 {
+        margin-bottom: 20px;
+    }
 }
 
 .concord-exp li {
     color: #fff;
     padding: 5px;
 }
+@media screen and (min-width: 576px) {
+    .concord-exp li {
+        line-height: 25px;
+        font-size: 1rem;
+    }
+}
 
 .lci-exp {
     border: 1px solid #fff;
-    padding: 15px;
-    margin: 5px;
     text-align: left;
-    height: 280px;
+    margin-top: 35px;
 }
+@media screen and (min-width: 576px) {
+    .lci-exp {
+        padding-bottom: 20px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .lci-exp {
+        height: 280px;
+    }
+}
+
 .lci-exp h3 {
     color: #D4AF37;
+    font-size: 1.3rem;
+    margin-left: 20px;
+}
+@media screen and (min-width: 576px) {
+    .lci-exp h3 {
+        margin-bottom: 20px;
+    }
 }
 
 .lci-exp li {
     color: #fff;
     padding: 5px;
 }
+@media screen and (min-width: 576px) {
+    .lci-exp li {
+        line-height: 25px;
+        font-size: 1rem;
+    }
+}
 
-.ecolab-exp {
+/* .ecolab-exp {
     border: 1px solid #fff;
     padding: 15px;
     margin: 5px;
@@ -521,7 +575,7 @@ Experience
 .valspar-exp li {
     color: #fff;
     padding: 5px;
-}
+} */
 
 /************************************************************** 
 Skills
