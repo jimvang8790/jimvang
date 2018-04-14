@@ -44,10 +44,10 @@ $(document).ready(function() {
      // initialize slick
      $('.project-container').slick({
         dots: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
         cssEase: 'linear',
+        // autoplay: true,
+        // autoplaySpeed: 8000,
+        draggable: true
         // nextArrow: '<i class="fa fa-arrow-right"></i>',
         // prevArrow: '<i class="fa fa-arrow-left"></i>'
       });

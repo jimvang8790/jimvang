@@ -41,19 +41,6 @@ body {
 .fixed-attachment {
     background-attachment: fixed;
 }
-
-/* @media screen and (min-width: 480px) {
-    .fixed-attachment {
-        background-attachment: scroll;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .fill-screen {
-        background-size: cover;
-        background-position: center;
-    }
-} */
   
 .divider {
     content: "";
@@ -730,9 +717,30 @@ Projects
     margin-top: 70px;
 }
 
+.project-texts {
+    padding-right: 30px;
+}
+
 #projects img {
     height: 350px;
     width: 480px;
+}
+
+#projects p {
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 30px;
+    padding-top: 10px;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 40px;
+    line-height: 1;
+    opacity: 1;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-dots li.slick-active button:before {
