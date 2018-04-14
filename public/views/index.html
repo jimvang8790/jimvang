@@ -1,345 +1,394 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Jim Vang | Front-End Developer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <link rel="icon" href="images/mind.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jim Vang</title>
+  <!-- <link rel="icon" href="images/favicon_tran2.png" type="image/png"> -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="vendors/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
   <link rel="stylesheet" href="vendors/css/animate.css">
-  <link rel="stylesheet" href="styles/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link rel="stylesheet" href="vendors/css/nanogallery.min.css">
+  <link rel="stylesheet" href="vendors/css/jquery.fs.wallpaper.css">
+  <link rel="stylesheet" href="vendors/css/slick.css">
+  <link rel="stylesheet" href="vendors/css/slick-theme.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
   <header>
-    <nav class="nav navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top cbp-af-header" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <i class="material-icons">&#xE5D2;</i>
-            </button>
-          <div class="hover11 ">
-            <a href="#main-section" class="home">
-              <figure><img class="main-logo" src="images/logo.png"></figure>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-header hover-logo">
+            <figure>
+                <a href="#top">
+                  <img alt="Brand" src="images/brand_logo.png">
+                </a>
+            </figure>
+          </div>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </header> <!-- End of header -->
+  <section id="video-wallpaper" class="masthead-wrapper">
+    <div class="banner-container">
+      <div class="banner-content">
+        <div class="banner-title">
+          <h4>Front-End Developer</h4>
+          <h1>A passion for technology</h1>
+          <h1>An eye for detail</h1>
+        </div>
+        <div class="welcome-ctas">
+          <div class="banner-btns">
+            <a class="btn btn-primary btn-lg btn-1" href="#experience" role="button">My Work</a>
+            <a class="btn btn-primary btn-lg btn-2" href="#projects" role="button">Learn More</a>
+          </div>
+          <div class="down-button">
+            <a href="#about" class="button">
+              <i class="fa fa-arrow-circle-down fa-3x"></i>
             </a>
           </div>
         </div>
-        <div class="main-tab">
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-              <a href="#about" class="tabs">About</a>
-              <a href="#skills" class="tabs">Skills</a>
-              <a href="#projects" class="tabs">Projects</a>
-            </ul>
-          </div>
-        </div>
-
       </div>
-    </nav>
-  </header>
-  <div class="wrapper">
-    <section id="main-section">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div id="main-info">
-            <div class="title">
-              <h1 class="h1">Jim Vang</h1>
-              <div class="divider-name"></div>
-            </div>
-            <div class="info">
-              <h3>Prime Digital Academy | Full-Stack Software Engineer</h3>
-              <h3>University of Minnesota | Chemistry</h3>
-            </div>
-            <br>
-            <p>Producing high-quality websites and exceptional user experience.</p>
-            <p>An eye for detail and a passion for technology.</p>
+    </div>
+  </section> <!-- End of video-wallpaper -->
+  <div class="container-fluid">
+    <section id="about" class="row">
+      <div class="fill-screen fixed-attachment stellar-bg" data-stellar-background-ratio="0.2">
+        <div class="container">
+          <div class="wow fadeInDown">
+            <h1>About</h1>
           </div>
-          <!-- end main-info -->
-        </div>
-        <!-- end row -->
-      </div>
-      <!-- end container -->
-    </section>
-    <!-- end section -->
-    <section id="about">
-      <div class="container text-center">
-        <div class="section-heading scrollpoint sp-effect3">
-          <h2>About</h2>
           <div class="divider"></div>
-        </div>
-      </div>
-      <!-- end container -->
-      <div class="container scrollpoint sp-effect3">
-        <div class="row">
-          <div class="col-6 col-md-4">
-            <img src="images/jimvang.jpg" alt="Photo of Jim Vang" class="profile-photo img-responsive">
-          </div>
-          <div class="col col-md-8">
-            <p>Hello, I'm a Full-Stack Software Developer and I am very passionate about the tech world. I am eager to grow and learn as a Web Developer in this ever-changing field. I graduated from Prime Digital Academy as a Full-Stack Software Engineer
-              and a Chemistry background from the University of Minnesota, Twin Cities.</p>
-            <p>I found Chemistry and coding to be very similar. Taking known chemicals and mixing them to achieve a known product is like writing lines of code to make a wanted function. Working in the Chemistry field taught me how to work in a team to
-              achieve project deadlines with high-quality work. It also taught me how to follow guidelines and regulations to complete projects for clients with different needs.</p>
-            <p>I’ve had great opportunities to grow and develop as a Web Developer and I'm seeking an innovative, forward thinking company that will allow me to continue to do so. I’ve found software development to be rewarding and exciting, while also challenging!</p>
-          </div>
-        </div>
-      </div>
-      <!-- end container -->
-    </section>
-    <!-- end about -->
-    <section id="skills">
-      <div class="overlay"></div>
-      <div class="container text-center">
-        <div class="section-heading scrollpoint sp-effect3">
-          <h2>Skills</h2>
-          <div class="divider"></div>
-          <p>Programming languages and tools that I have worked with</p>
-          <div class="container">
-            <div class="row skills-row">
-              <div class="col-xs-4 col-md-2 hover08">
-                <figure>
-                  <img src="images/html.png" class="skills">
-                </figure>
-                <span>HTML5</span>
-              </div>
-              <div class="col-xs-4 col-md-2 hover08">
-                <figure>
-                  <img src="images/css.png" class="skills">
-                </figure>
-                <span>CSS3</span>
-              </div>
-              <div class="col-xs-4 col-md-2 hover08">
-                <figure>
-                  <img src="images/js.png" class="skills">
-                </figure>
-                <span>JavaScript</span>
-              </div>
-              <div class="col-xs-4 col-md-2 hover08">
-                <figure>
-                  <img src="images/jQuery.png" class="skills">
-                </figure>
-                <span>jQuery</span>
-              </div>
-              <div class="col-xs-4 col-md-2 hover08">
-                <figure>
-                  <img src="images/Bootstrap.png" class="skills">
-                </figure>
-                <span>Bootstrap</span>
-              </div>
-              <div class="col-xs-4 col-md-2 hover08">
-                <figure>
-                  <img src="images/git.png" class="skills">
-                </figure>
-                <span>Git</span>
-              </div>
-            </div>
-
-            <div class="row skills-row">
-              <div class="col-xs-4 col-md-2 hover08">
-                <figure>
-                  <img src="images/mongodb.png" class="skills">
-                </figure>
-                <span>MongoDB</span>
-              </div>
-              <div class="col-xs-4 col-md-2 hover08">
-                <figure>
-                  <img src="images/angularjs.png" class="skills">
-                </figure>
-                <span>AngularJS</span>
-              </div>
-              <div class="col-xs-4 col-md-2 hover08">
-                <figure>
-                  <img src="images/nodejs.png" class="skills">
-                </figure>
-                <span>Node.js</span>
-              </div>
-              <div class="col-xs-4 col-md-2 hover08">
-                <figure>
-                  <img src="images/react.png" class="skills">
-                </figure>
-                <span>React</span>
-              </div>
-              <div class="col-xs-4 col-md-2 hover08">
-                <figure>
-                  <img src="images/relay.png" class="skills">
-                </figure>
-                <span>Relay</span>
-              </div>
-              <div class="col-xs-4 col-md-2 hover08">
-                <figure>
-                  <img src="images/graphql.png" class="skills">
-                </figure>
-                <span>GraphQL</span>
-              </div>
-            </div>
-
-            <div class="row skills-row">
-              <div class="col-xs-4 col-md-2 hover08">
-                <figure>
-                  <img src="images/npm.png" class="skills">
-                </figure>
-                <span>npm</span>
-              </div>
-              <div class="col-xs-4 col-md-2 hover08">
-                <figure>
-                  <img src="images/postgresql.png" class="skills">
-                </figure>
-                <span>PostgreSQL</span>
-              </div>
-              <div class="col-xs-4 col-md-2 hover08">
-                <figure>
-                  <img src="images/heroku.png" class="skills">
-                </figure>
-                <span>Heroku</span>
-              </div>
-              <div class="col-xs-4 col-md-2 hover08">
-                <figure>
-                  <img src="images/githublogo.png" class="skills">
-                </figure>
-                <span>Github</span>
-              </div>
-              <div class="col-xs-4 col-md-2 hover08">
-                <figure>
-                  <img src="images/bitbucket.png" class="skills">
-                </figure>
-                <span>Bitbucket</span>
-              </div>
-              <div class="col-xs-4 col-md-2 hover08">
-                <figure>
-                  <img src="images/twilio.png" class="skills">
-                </figure>
-                <span>Twilio</span>
-              </div>
-            </div>
-
-          </div>
-          <!-- end container -->
-        </div>
-        <!-- end section-heading -->
-      </div>
-      <!-- end contaier -->
-    </section>
-    <!-- end projects -->
-    <section id="projects">
-      <!-- <div class="overlay-projects"></div> -->
-      <div class="container text-center">
-        <div class="section-heading scrollpoint sp-effect3">
-          <h2>Projects</h2>
-          <div class="divider"></div>
-          <p>Web Sites and Applications that I helped develop</p>
-
           <div class="row">
-            <!-- Agent Ave -->
-            <div class="col-md-4 case-item item-padding">
-              <div class="card">
-                <div class="hover01">
-                  <figure>
-                    <main>
-                      <a href="views/projects/agentave.html"><img class="card-img-top" src="images/agentave.jpg" alt="Image of Agent Ave"></a>
-                    </main>
-                  </figure>
+            <div class="col-sm-6">
+              <div class="interest">
+                  <img class="aquascaping" src="images/about/aquascaping.jpeg" alt="aquascaping">
+                  <img class="jim" src="images/about/jimvang.jpg" alt="jim vang">
+                  <img class="gaming" src="images/about/gaming.jpeg" alt="gaming">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="about-text">
+                <p>Hello, I'm Jim, a Front-End Developer. I have an a passion for what I do and I am eager to keep growing and learning as a Developer in this ever-changing field.</p>
+                <p>I graduated from Prime Digital Academy as a Full-Stack Software Engineer and a Chemistry degree from the University of Minnesota.</p>
+                <!-- <p>I found Chemistry and coding to be very similar. Taking known chemicals and mixing them to achieve a known product is like writing lines of code to make a wanted function. Working in the Chemistry field taught me how to work in a team to achieve project deadlines with high-quality work. It also taught me how to follow guidelines and regulations to complete projects for clients with different needs.</p> -->
+                <!-- <p>I’ve had great opportunities to grow and develop as a Web Developer and I'm seeking an innovative, forward thinking company that will allow me to continue to do so. I’ve found software development to be rewarding and exciting, while also challenging!</p> -->
+                <p>In my free time, I started learning the art of Aquascaping. This has been challenging and extremely rewarding.</p>
+                <p>I also enjoy gaming!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> <!-- End of about section -->
+    <section id="experience" class="row">
+      <div class="fill-screen fixed-attachment stellar-bg" data-stellar-background-ratio="0.2">
+        <div class="container">
+          <div class="wow fadeInDown">
+            <h1>Experience</h1>
+          </div>
+          <div class="divider"></div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="concord-exp">
+                <h3>Front-End Developer</h3>
+                <ul>
+                  <li>Currently a Front-End Developer at Concord.</li>
+                  <!-- <li>Crafting efficient, user-centric and multi-platform interfaces using a variety of technologies and tools.</li> -->
+                  <li>Work in a collaborative, innovative, flexible and agile scrum team environment.</li>
+                  <li>Technologies being used are HTML5, CSS3, JavaScript, Bootstrap, SASS, Angular4, and TypeScript.</li>
+                  <!-- <li>Technologies being used are HTML5, CSS3, JavaScript, Bootstrap, SASS, Angular4, TypeScript, Git, jQuery, Gulp, JSON, AJAX, Bitbucket, JIRA, Confluence, Bamboo, and Sourcetree.</li> -->
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="lci-exp">
+                <h3>Web Developer | Tech Analyst</h3>
+                <ul>
+                  <li>Web Developer/Tech Analyst for Lawinger Consulting Inc. contracted at 3M.</li>
+                  <li>Responsible for web development assignments and manage them through timely completion.</li>
+                  <!-- <li>Organizing website work into projects for page layout and communicate status updates clearly and proactively.</li> -->
+                  <li>Technologies used were HTML, CSS, JavaScript, jQuery, JIRA, WebSphere, and FUZE.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="row">
+            <div class="col-md-6">
+              <div class="ecolab-exp">
+                <h3>Lab Technician</h3>
+                <ul>
+                  <li>Worked as a Lab Technician for Adecco contracted at Ecolab.</li>
+                  <li>Worked on providing analytical and technical support for analysis on finish product and raw materials.</li>
+                  <li>Applied a variety of manual and automated wet chemistry techniques such as titrations, viscosity, and qualitative test methods. Analyzed samples using HPLC/NMR and interpret results. Multi-task between many projects to ensure the completion deadlines are met.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="valspar-exp">
+                <h3>R&D Lab Technician</h3>
+                <ul>
+                  <li>Worked as a Lab Technician for Adecco contracted at Valspar.</li>
+                  <li>Prepared formulations for coating by mixing chemicals and operating lab equipment.</li>
+                  <li>Product performance test and compatibility for an industrial customer. Tested paint for viscosity, hiding, film thickness, KU, solids, pot life, color.</li>
+                  <li>Communicated with other chemists or scientists for project status/solutions.</li>
+                </ul>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section> <!-- End of experience section -->
+    <section id="skills" class="row">
+      <div class="fill-screen fixed-attachment stellar-bg" data-stellar-background-ratio="0.2">
+        <div class="container">
+          <div class="wow fadeInDown">
+            <h1>Skills</h1>
+          </div>
+          <div class="divider"></div>
+          <div class="skills-icons">
+            <div class="row">
+              <div class="skills-row-1">
+                <div class="col-xs-6 col-md-3 img-content">
+                  <i class="fas fa-file-code fa-5x"></i>
+                  <h4>Front-End Development</h4>
+                  <p>Producing Website/Web Application so that users can see and interact with them directly</p>
+                </div>
+                <div class="col-xs-6 col-md-3 img-content">
+                  <i class="fas fa-database fa-5x"></i>
+                  <h4>Back-End Development</h4>
+                  <p>Create core computational logic of a Website, Software, or information system</p>
+                </div>
+                <div class="col-xs-6 col-md-3 img-content">
+                  <i class="fas fa-users fa-5x"></i>
+                  <h4>Agile Team</h4>
+                  <p>Cross-functional team necessary to produce a working, tested increment of product</p>
+                </div>
+                <div class="col-xs-6 col-md-3 img-content">
+                  <i class="fas fa-comments fa-5x"></i>
+                  <h4>Communication</h4>
+                  <p>Relaying important information to contribute to a project's success</p>
                 </div>
               </div>
             </div>
-            <!-- STEP-UP Check-In -->
-            <div class="col-md-4 case-item item-padding">
-              <div class="card">
-                <div class="hover01">
-                  <figure>
-                    <main>
-                      <a href="views/projects/stepup.html"><img class="card-img-top" src="images/STEP-UP.jpg" alt="Image of STEP-UP Check-In"></a>
-                    </main>
-                  </figure>
+            <div class="row">
+              <div class="skills-row-2">
+                <div class="col-xs-6 col-md-3 img-content">
+                  <img src="images/skills/html.svg" alt="html">
+                  <h4>HTML5</h4>
+                  <p>Extensive Experience using HTML5 to produce the structure of Websites&Applications</p>
                 </div>
-              </div>
-            </div>
-            <!-- BounceTribe -->
-            <div class="col-md-4 case-item item-padding">
-              <div class="card">
-                <div class="hover01">
-                  <figure>
-                    <main>
-                      <a href="views/projects/bouncetribe.html"><img class="card-img-top" src="images/bouncetribe.jpg" alt="Image of BounceTribe"></a>
-                    </main>
-                  </figure>
+                <div class="col-xs-6 col-md-3 img-content">
+                  <img src="images/skills/css.svg" alt="css">
+                  <h4>CSS3</h4>
+                  <p>Deep understanding of CSS3 and its framework to style Websites&Applications</p>
+                </div>
+                <div class="col-xs-6 col-md-3 img-content">
+                  <img src="images/skills/js.svg" alt="javascript">
+                  <h4>JavaScript</h4>
+                  <p>A broad knowledge of JavaScript and its frameworks/libraries to create interaction of Websites&Applications</p>
+                </div>
+                <div class="col-xs-6 col-md-3 img-content">
+                  <img src="images/skills/git.svg" alt="git">
+                  <h4>Git</h4>
+                  <p>Git is a version control system for tracking changes in computer files and coordinating work</p>
                 </div>
               </div>
             </div>
           </div>
-          <!-- end row -->
-
         </div>
-        <!-- end section-heading -->
       </div>
-      <!-- end container -->
-    </section>
-    <!-- end projects -->
-  </div>
-  <!-- end wrapper -->
+    </section> <!-- End of skills section -->
 
+    <section id="projects" class="row">
+      <div class="fill-screen fixed-attachment stellar-bg" data-stellar-background-ratio="0.2">
+        <div class="container">
+          <div class="wow fadeInDown">
+            <h1>Projects</h1>
+          </div>
+          <div class="divider"></div>
+          <h4>Websites and Applications that I Helped Develop</h4>
+           <div class="project-container">
+              <div class="project-content">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <img src="images/projects/agentave/agentave.png" alt="">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="project-texts">
+                        <h4>Agent Ave</h4>
+                        <p>A solution for Independent Insurance Agents to save time & drive sales</p>
+                        <p>Manage carrier data such as underwriting guidelines, ID/Passwords, industry contacts, sales reports and more</p>
+                        <p>Technologies being used are MEAN Stack, HTML5, CSS3, JavaScript, AngularJS, Bootstrap, Grunt, Jade/Pug, and Style</p>
+                        <a class="btn btn-primary btn-2" href="https://www.myagentave.com/product/" target="_blank" role="button">Visit Website</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <img src="images/projects/stepup/stepupachieve.png" alt="">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="project-texts">
+                        <h4>STEP-UP Check-In</h4>
+                        <p>An application design for to easily check in with over 1,700 youth interns weekly</p>
+                        <p>A user-friendly, online web application for youth to share information about their summer internship</p>
+                        <p>Technologies being used are HTML, CSS, Bootstrap, JavaScript, SQL, Express.js, AngularJS, Node.js, Twilio, D3.js, Google OAuth, Grunt, and Heroku</p>
+                        <a class="btn btn-primary btn-2" href="https://www.achievempls.org/stepupachieve" target="_blank" role="button">Visit Website</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <img src="images/projects/bouncetribe/bouncetribe.png" alt="">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="project-texts">
+                        <h4>BounceTribe</h4>
+                        <p>An application that allows aspiring musicians to learn from professionals</p>
+                        <p>With a new generation of musicians using technology to record and produce music in their bedrooms, the process of making music has never been easier.</p>
+                        <p>Technologies being used are HTML5, CSS3, JavaScript, React, Relay, and GraphQL</p>
+                        <a class="btn btn-primary btn-2" href="http://bouncetribe.com/" target="_blank" role="button">Visit Website</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+        </div>
+      </div>
+    </section> <!-- End of projects section-->
+  </div> <!-- End of containter-fluid -->
   <footer id="footer">
-    <div class="container text-center foot-content">
+    <div class="container">
+      <div class="footer-info">
+        <h2>Jim Vang | <span class="footer-job">Front-End Developer</span></h2>
+        <p><b>Cell:</b> (612)-708-5347</p>
+        <p><b>Email:</b> vangjim15@gmail.com</p>
+      </div>
       <div class="row">
-        <div class="col-md-4">
-          <h3>Work Details</h3>
-          <div class="row">
-            <div class="col-6 col-md-4">
-              <img src="images/jimvang2.jpg" alt="Photo of Jim Vang" class="profile-photo2 img-responsive">
+        <div class="footer-nav">
+            <div class="col-xs-6 col-md-3">
+              <div class="footer-about">
+                <a href="#about"><h3>About</h3></a>
+                <ul>
+                  <li>Prime Digital Academy</li>
+                  <li>University of Minnesota</li>
+                </ul>
+              </div>
             </div>
-            <div class="col col-md-8">
-              <p class="footer-p">I am currently looking for programming opportunities. If you have any questions, please don't hesitate to contact me.</p>
+            <div class="col-xs-6 col-md-3">
+              <div class="footer-experience">
+                <a href="#experience"><h3>Experience</h3></a>
+                <ul>
+                  <li>Concord</li>
+                  <li>Lawinger Consulting Inc.</li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <h3>Connect With Me</h3>
-          <ul class="contact-info">
-            <li class="phone">
-              <a href="tel:612-708-5347" target="_blank">
-                <p>(612)-708-5347</p>
-              </a>
-            </li>
-            <li class="mail">
-              <a href="mailto:vangjim15@gmail.com" target="_blank">
-                <p>vangjim15@gmail.com</p>
-              </a>
-            </li>
-            <li class="linkedin">
-              <a href="https://www.linkedin.com/in/jim-vang-283609133" target="_blank">
-                <p>linkedin.com/in/jim-vang-283609133</p>
-              </a>
-            </li>
-            <li class="github">
-              <a href="https://github.com/jimvang8790" target="_blank">
-                <p>github.com/jimvang8790</p>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <a href="#about" class="footer-nav"><h3>About</h3></a>
-          <p class="footer-nav">Learn about Jim's background</p>
-          <a href="#skills" class="footer-nav"><h3>Skills</h3></a>
-          <p class="footer-nav">Learn all about Jim's skills</p>
-          <a href="#projects" class="footer-nav"><h3>Projects</h3></a>
-          <p class="footer-nav">View Jim's development work</p>
+            <div class="col-xs-6 col-md-3">
+              <div class="footer-skills">
+                <a href="#skills"><h3>Skills</h3></a>
+                <ul>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>JavaScript...</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <div class="footer-projects">
+                <a href="#projects"><h3>Projects</h3></a>
+                <ul>
+                  <li>Agent Ave</li>
+                  <li>STEP-UP Check-In</li>
+                  <li>BounceTribe</li>
+                </ul>
+              </div>
+            </div>
         </div>
       </div>
     </div>
-    <p class="copy-right text-center">&copy; 2017 Jim Vang</p>
-  </footer>
+    <div class="divider-footer"></div>
+    <div class="container">
+      <div class="row">
+        <div class="footer-contact-info">
+          <div class="col-md-4">
+            <div class="row">
+              <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/jim-vang-283609133" target="_blank">
+                    <!-- <i class="fas fa-address-book fa-2x"></i> -->
+                    <img src="images/footer/linkedin.svg" alt="">
+                  </a>
+                  <a href="https://github.com/jimvang8790" target="_blank">
+                    <!-- <i class="fas fa-envelope fa-2x"></i> -->
+                    <img src="images/footer/github.svg" alt="">
+                  </a>
+                  <a href="mailto:vangjim15@gmail.com" target="_blank">
+                    <!-- <i class="fas fa-code-branch fa-2x"></i> -->
+                    <img src="images/footer/email.svg" alt="">
+                  </a>
+                  <a href="tel:612-708-5347" target="_blank">
+                    <!-- <i class="fas fa-mobile fa-2x"></i> -->
+                    <img src="images/footer/mobile.svg" alt="">
+                  </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-banner">
+                <p>A passion for technology & An eye for detail</p>
+                <p></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-copy-rights">
+              <p>&copy; 2018 Jim Vang. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer> <!-- End of footer -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
   <script src="vendors/js/jquery-1.11.1.min.js"></script>
   <script src="vendors/js/bootstrap.min.js"></script>
+  <script src="vendors/js/classie.js"></script>
+  <script src="vendors/js/cbpAnimatedHeader.js"></script>
+  <script src="vendors/js/jquery.fs.wallpaper.min.js"></script>
+  <script src="vendors/js/jquery.easing.js"></script>
+  <script src="vendors/js/jquery.stellar.js"></script>
+  <script src="vendors/js/wow.min.js"></script>
   <script src="vendors/js/slick.min.js"></script>
-  <script src="vendors/js/waypoints.min.js"></script>
-  <script src="scripts/scripts.js"></script>
-  <!-- Angular -->
-  <!-- <script src="vendors/js/angular.min.js" charset="utf-8"></script>
-    <script src="vendors/js/angular-route.min.js" charset="utf-8"></script>
-    <script src="scripts/client.js" charset="utf-8"></script> -->
+  <script src="js/main.js"></script>
 </body>
-
 </html>

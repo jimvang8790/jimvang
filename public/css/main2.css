@@ -1,0 +1,391 @@
+/****************************************************
+Generals
+*****************************************************/
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2em;
+  }
+  
+  h2 {
+    font-weight: bold;
+  }
+  
+  section {
+    position: relative;
+    padding: 45px 0;
+  }
+  
+  section::before, section::after {
+    pointer-events: none;
+    overflow: hidden;
+    display: block;
+    content: " ";
+    margin-top: -10px;
+    height: 15px;
+    visibility: hidden;
+  }
+  
+  .divider {
+    width: 100%;
+    padding-bottom: 25px;
+  }
+  
+  .divider:after {
+    content: "";
+    background: #337ab7;
+    position: relative;
+    height: 4px;
+    width: 300px;
+    display: block;
+    text-align: center;
+    margin: 13px auto;
+    -webkit-border-radius: 5em;
+    -moz-border-radius: 5em;
+    -ms-border-radius: 5em;
+    -o-border-radius: 5em;
+    border-radius: 5em;
+  }
+  
+  .section-heading {
+    margin-top: 100px;
+  }
+  
+  .overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    opacity: 0.5;
+    background: #262626;
+  }
+  
+  /****************************************************
+  Intro/Main-Section
+  *****************************************************/
+  
+  #main-section h3 {
+  
+  }
+  
+  /****************************************************
+  Nav
+  *****************************************************/
+  
+  header .navbar-default {
+    background: #ffffff;
+    border: none;
+    padding: 10px 0;
+    -webkit-box-shadow: 0px 1px 1px #4d4d4d;
+    -moz-box-shadow: 0px 1px 1px #4d4d4d;
+    box-shadow: 0px 1px 1px #4d4d4d;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+  }
+  
+  .main-logo {
+    float: left;
+  }
+  
+  .main-tab {
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+  .tabs {
+    padding: 10px 10px;
+  }
+  
+  .hover11 figure img {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  
+  .hover11 figure:hover img {
+    opacity: .5;
+  }
+  
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /****************************************************
+  Main Section
+  *****************************************************/
+  
+  #main-section {
+    background: white url("/images/minsky.jpg") no-repeat fixed 100%;
+    position: relative;
+    height: 100%;
+    min-height: 700px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #main-info {
+    position: absolute;
+    top: 175px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .main-header {
+    margin-bottom: 40px;
+  }
+  
+  .h1 {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  .divider-name {
+    width: 100%;
+    padding-bottom: 5px;
+  }
+  
+  .divider-name:after {
+    content: "";
+    background: #fff;
+    position: relative;
+    height: 4px;
+    width: 300px;
+    display: block;
+    text-align: center;
+    margin: 13px auto;
+    -webkit-border-radius: 5em;
+    -moz-border-radius: 5em;
+    -ms-border-radius: 5em;
+    -o-border-radius: 5em;
+    border-radius: 5em;
+  }
+  
+  .h4 {
+    color: #fff;
+  }
+  
+  /****************************************************
+  About
+  *****************************************************/
+  
+  .profile-photo {
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .skills {
+    height: 15vmin;
+    width: 15vmin;
+    padding: 1vmin 1vmin;
+    text-align: center;
+  }
+  
+  .row {
+    margin: 10px 10px;
+  }
+  
+  /****************************************************
+  Experience
+  *****************************************************/
+  
+  #skills {
+    background: white url("/images/greyback.jpg") no-repeat fixed 100%;
+    position: relative;
+    height: 100%;
+    min-height: 600px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  }
+  
+  .skills-row {
+    padding-top: 5px;
+  }
+  
+  .skills-row span {
+    color: #b3b3b3;
+  }
+  
+  /* Blur */
+  
+  /*.hover08 figure img {*/
+    /*-webkit-filter: blur(3px);*/
+    /*filter: blur(3px);*/
+    /*-webkit-transition: .3s ease-in-out;*/
+    /*transition: .3s ease-in-out;*/
+  /*}*/
+  
+  /*.hover08 figure:hover img {*/
+    /*-webkit-filter: blur(0);*/
+    /*filter: blur(0);*/
+  /*}*/
+  
+  /*span {*/
+    /*bottom: -20px;*/
+    /*display: block;*/
+    /*color: #fff;*/
+    /*font-size: 18px;*/
+    /*text-decoration: none;*/
+    /*text-align: center;*/
+    /*-webkit-transition: .3s ease-in-out;*/
+    /*transition: .3s ease-in-out;*/
+    /*opacity: 0;*/
+  /*}*/
+  
+  /*figure:hover+span {*/
+    /*bottom: -36px;*/
+    /*opacity: 1;*/
+  /*}*/
+  
+  /****************************************************
+  Projects
+  *****************************************************/
+  
+  #projects {
+    background: white url("/images/projects.jpg") no-repeat fixed 100%;
+    position: relative;
+    height: 100%;
+    min-height: 700px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  }
+  
+  .card-img-top {
+    height: 250px;
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 40px;
+  }
+  
+  .hover01 figure main {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  
+  .hover01 figure:hover main {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+  
+  /****************************************************
+  Work
+  *****************************************************/
+  
+  #work {
+    background: white url('/images/projects.jpg') no-repeat fixed;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    color: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .work-heading {
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .work-container {
+    max-width: 900px;
+  }
+  
+  .work-header {
+    font-weight: bold;
+  }
+  
+  /****************************************************
+  Footer
+  *****************************************************/
+  
+  footer {
+    background: #222 !important;
+    font-size: 0.75em;
+    clear: both;
+    padding-top: 50px;
+    color: #ccc;
+  }
+  
+  .profile-photo2 {
+    border-radius: 5px;
+    margin: 10px;
+  }
+  
+  .contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contact-info a {
+    display: block;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+  }
+  
+  .contact-info li.phone a {
+    background-image: url('/images/phone.png');
+  }
+  
+  .contact-info li.mail a {
+    background-image: url('/images/gmail.png');
+  }
+  
+  .contact-info li.linkedin a {
+    background-image: url('/images/linkedin.png');
+  }
+  
+  .contact-info li.github a {
+    background-image: url('/images/github.png');
+  }
+  
+  .copy-right {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  
+  .footer-p {
+    text-align: left;
+  }
+  
+  .footer-nav {
+    text-align: left;
+  }
+  
