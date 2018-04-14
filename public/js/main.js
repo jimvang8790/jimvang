@@ -12,7 +12,7 @@ $(document).ready(function() {
     }); // end scroolspy
 
     // smooth scrolling jquery.easing
-    $('.nav a, .down-button a, .overlay-banner a, .footer-nav a').bind('click', function () {
+    $('.nav a, .down-button a, .overlay-banner a, .footer-nav a, .banner-btns a').bind('click', function () {
         $('html, body').stop().animate({
             scrollTop: $($(this).attr('href')).offset().top - 80
         }, 1500, 'easeInOutExpo');
@@ -33,20 +33,12 @@ $(document).ready(function() {
     // initialize WOW for element animation
     new WOW().init();
 
-    // initialize NanoGallery
-    // $("#nanoGallery").nanoGallery({
-    //     thumbnailWidth: 'auto',
-    //     thumbnailHeight: 100,
-    //     locationHash: false,
-    //     thumbnailHoverEffect:'borderLighter,imageScaleIn80'
-    // });
-
      // initialize slick
      $('.project-container').slick({
         dots: true,
         cssEase: 'linear',
-        // autoplay: true,
-        // autoplaySpeed: 8000,
+        autoplay: true,
+        autoplaySpeed: 8000,
         draggable: true
         // nextArrow: '<i class="fa fa-arrow-right"></i>',
         // prevArrow: '<i class="fa fa-arrow-left"></i>'
