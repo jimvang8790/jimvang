@@ -674,8 +674,14 @@ Projects
     background-size: auto 100%;
     background-position: 50% 100%;
     background-repeat: no-repeat;
+    height: 750px;
     overflow: hidden;
     z-index: 0;
+}
+@media screen and (min-width: 576px) {
+    #projects  {
+        height: 850px;
+    } 
 }
 @media screen and (min-width: 1200px) {
     #projects  {
@@ -704,7 +710,7 @@ Projects
 #projects h4 {
     text-align: center;
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 @media screen and (min-width: 992px) {
     #projects h4 {
@@ -714,33 +720,95 @@ Projects
 }
 
 .project-container {
-    margin-top: 70px;
+    margin-top: 40px;
+}
+@media screen and (min-width: 992px) {
+    .project-container {
+        margin-top: 70px;
+    }
 }
 
-.project-texts {
-    padding-right: 30px;
+.project-content {
+    /* text-align: center; */
+}
+
+.project-texts h4 {
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 992px) {
+    .project-texts {
+        padding-right: 30px;
+    }
 }
 
 #projects img {
-    height: 350px;
-    width: 480px;
+    height: 200px;
+    width: 240px;
+    margin-left: 10px;
+}
+@media screen and (min-width: 375px) {
+    #projects img {
+        margin-left: 40px;
+    }
+}
+@media screen and (min-width: 576px) {
+    #projects img {
+        height: 350px;
+        width: 480px;
+    }
+}
+@media screen and (min-width: 768px) {
+    #projects img {
+        height: 350px;
+        width: 570px;
+        margin-left: 70px;
+    }
+}
+@media screen and (min-width: 992px) {
+    #projects img {
+        height: 325px;
+        width: 440px;
+        margin-left: 20px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #projects img {
+        height: 350px;
+        width: 480px;
+        margin-left: 20px;
+    }
 }
 
 #projects p {
     color: #fff;
-    font-size: 0.9rem;
-    line-height: 30px;
+    font-size: 1rem;
+    line-height: 20px;
     padding-top: 10px;
+}
+@media screen and (min-width: 992px) {
+    #projects p {
+        color: #fff;
+        font-size: 0.9rem;
+        line-height: 30px;
+        padding-top: 10px;
+    }
 }
 
 .slick-prev:before, .slick-next:before {
-    font-family: 'slick';
-    font-size: 40px;
-    line-height: 1;
-    opacity: 1;
-    color: white;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    display: none;
+}
+@media screen and (min-width: 1200px) {
+    .slick-prev:before, .slick-next:before {
+        font-family: 'slick';
+        font-size: 40px;
+        line-height: 1;
+        opacity: 1;
+        color: white;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        display: block;
+    }
 }
 
 .slick-dots li.slick-active button:before {
@@ -752,6 +820,16 @@ Projects
         line-height: 50px;
         opacity: 1;
         color: #fff;
+}
+@media screen and (min-width: 768px) {
+    .slick-dots li button:before {
+        margin-top: 30px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .slick-dots li button:before {
+        margin-top: 40px;
+    }
 }
 
 /************************************************************** 
