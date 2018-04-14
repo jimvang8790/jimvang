@@ -20,8 +20,7 @@
     "jquery": "^3.2.1",
     "jquery.easing": "^1.4.1",
     "jquery.stellar": "^0.6.2",
-    "nanogallery": "^5.10.3",
-    "slick-carousel": "^1.7.1",
+    "slick-carousel": "^1.8.1",
     "waypoints": "^4.0.1",
     "wowjs": "^1.1.3"
   }

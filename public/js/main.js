@@ -41,4 +41,15 @@ $(document).ready(function() {
     //     thumbnailHoverEffect:'borderLighter,imageScaleIn80'
     // });
 
+     // initialize slick
+     $('.project-container').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        // nextArrow: '<i class="fa fa-arrow-right"></i>',
+        // prevArrow: '<i class="fa fa-arrow-left"></i>'
+      });
+
 }); // end document.ready

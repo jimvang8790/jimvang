@@ -683,38 +683,67 @@ Projects
 
 #projects {
     background-image: url("../images/projects.jpg");
+    position: relative;
+    background-size: auto 100%;
+    background-position: 50% 100%;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    overflow: hidden;
+    z-index: 0;
+}
+@media screen and (min-width: 1200px) {
+    #projects  {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    } 
 }
 
 #projects h1 {
     text-align: center;
+    font-size: 1.5rem;
     color: #fff;
+}
+@media screen and (min-width: 768px) {
+    #projects h1 {
+        font-size: 2.2rem;
+    }
+}
+@media screen and (min-width: 992px) {
+    #projects h1 {
+        font-size: 2.4rem;
+    }
 }
 
 #projects h4 {
     text-align: center;
     color: #fff;
+    font-size: 1rem;
+}
+@media screen and (min-width: 992px) {
+    #projects h4 {
+        font-size: 1.3rem;
+        margin-top: 30px;
+    }
 }
 
-.card-img-top {
-    height: 250px;
-    width: 300px;
-    border-radius: 10px;
-    margin-top: 40px;
-}
-  
-.hover figure main {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
+.project-container {
+    margin-top: 70px;
 }
 
-.hover figure:hover main {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+#projects img {
+    height: 350px;
+    width: 480px;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #D4AF37;
+}
+.slick-dots li button:before {
+        font-size: 40px;
+        line-height: 50px;
+        opacity: 1;
+        color: #fff;
 }
 
 /************************************************************** 
