@@ -583,30 +583,68 @@ Skills
 
 #skills {
     background-image: url("../images/ivory_bkg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    position: relative;
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    z-index: 0;
+}
+@media screen and (min-width: 576px) {
+    #skills  {
+        height: 950px;
+    } 
+}
+@media screen and (min-width: 576px) {
+    #skills  {
+        height: 1050px;
+    } 
+}
+@media screen and (min-width: 992px) {
+    #skills  {
+        height: 720px;
+    } 
 }
 
 #skills h1 {
     text-align: center;
+    font-size: 1.5rem;
 }
-
-#skills .divider {
-    padding-bottom: 80px;
+@media screen and (min-width: 768px){
+    #skills h1 {
+        font-size: 2.2rem;
+    }
+}
+@media screen and (min-width: 992px) {
+    #skills h1 {
+        font-size: 2.4rem;
+    }
 }
 
 .skills-icons {
     text-align: center;
+    margin-top: 30px;
 }
 
-.skills-row-1 h4,
-.skills-row-2 h4 {
-    padding-top: 15px;
+#skills h4 {
+   font-size: 1rem; 
+   color: #676562;
+}
+@media screen and (min-width: 768px) {
+    #skills h4 {
+        padding-top: 15px;
+    }
 }
 
-.skills-row-1 p,
-.skills-row-2 p {
+#skills p {
+    display: none;
+}
+@media screen and (min-width: 576px) {
+    #skills p {
+        display: block;
+    }  
+}
+
+#skills p {
     padding-top: 10px;
     padding-bottom: 20px;
 }
@@ -615,9 +653,28 @@ Skills
     padding-top: 15px;
 }
 
+.img-content {
+    margin-top: 20px;
+}
+
+.fa-5x {
+    font-size: 3rem;
+    color: #000;
+}
+@media screen and (min-width: 992px) {
+    .fa-5x {
+        font-size: 5rem;
+    }
+}
+
 .skills-icons img {
-    height: 85px;
-    width: 85px;
+    height: 50px;
+}
+@media screen and (min-width: 768px) {
+    .skills-icons img {
+        height: 85px;
+        width: 85px;
+    }
 }
 
 /************************************************************** 
@@ -666,7 +723,7 @@ Footer
 
 footer {
     background-color: #E5E4E2;
-    padding: 20px 20px 20px 20px;
+    padding: 40px 20px 20px 20px;
     text-align: left;
 }
 
