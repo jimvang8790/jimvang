@@ -283,13 +283,13 @@ Masthead-Wrapper
 About
 ***************************************************************/
 
-#about {
+/* #about {
     background-image: url("../images/ivory_bkg.jpg");
     position: relative;
     height: 600px;
     overflow: hidden;
     z-index: 0;
-}
+} */
 @media screen and (min-width: 768px) {
     #about  {
         height: 700px;
@@ -322,34 +322,31 @@ About
 }
 
 .interest img {
-    border-radius: 50%;
+    border-radius: 5px;
 }
 
 .jim {
     height: 150px;
     width: 175px;
-    border: 1px solid #fff;
 }
 @media screen and (min-width: 768px) {
     .jim {
         position: absolute;
-        top: 190px;
+        top: 50px;
         left: 65px;
         height: 245px;
         width: 255px;
-        border: 3px solid #fff;
     }
 }
 @media screen and (min-width: 992px) {
     .jim {
-        top: 130px;
-        left: 150px;
-        height: 305px;
-        width: 315px;
+        top: 85px;
+        height: 300px;
+        width: 365px;
     }
 }
 
-.aquascaping,
+/* .aquascaping,
 .gaming {
     display: none;
 }
@@ -390,7 +387,7 @@ About
         top: 345px;
         left: 40px;
     }
-}
+} */
 
 .about-text {
     margin-top: 40px;
